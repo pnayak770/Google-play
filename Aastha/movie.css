@@ -1,0 +1,160 @@
+*{
+    margin: 20px;
+    padding: 1px;
+}
+
+
+.btn{
+    margin-left: 5px;
+    margin-right: 5px;
+    cursor: pointer;
+    height: 80%;
+    border-radius: 20px;
+    border-color: #5f6368;
+    width: 100px;
+    height: 10px;
+    padding: 18px;
+    text-align: center;
+    text-decoration: #5f6368;
+    font-family: "Google Sans",Roboto,Arial,sans-serif;
+    line-height: .3rem;
+    font-size: 1.0rem;
+    letter-spacing: 0;   
+}
+/* catalog section */
+
+.catalog_section {
+    margin: 2rem 0;
+    width: 100%;
+    overflow: hidden;
+}
+
+.heading {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #202124;
+    letter-spacing: none;
+    margin: 1rem 0 0 0rem;
+}
+.detail{
+    position: relative;
+    
+    margin-left:12px;
+}
+.title{
+    font-size:.9rem;
+}
+.rating-download{
+    display:flex;
+    font-size:.9rem;
+    color:#aaa;
+}
+.download{
+    margin-left:5px;
+}
+
+.offers {
+    display: flex;
+    width: 100%;
+    overflow: auto;
+}
+
+.offers::-webkit-scrollbar {
+    height: 3px;
+    width: 4px;
+}
+
+.offers::-webkit-scrollbar-thumb {
+    background-color: #f1efef;
+}
+
+.offer_img {
+    width: 10.6rem;
+    height: 15.6rem;
+    margin: 0.8rem;
+}
+.categories {
+    display: flex;
+    width: 100%;
+    overflow: auto;
+}
+.categories::-webkit-scrollbar {
+    height: 3px;
+    width: 4px;
+}
+.categories::-webkit-scrollbar-thumb {
+    background-color: #f1efef;
+}
+.category_img {
+    width: 10.6rem;
+    height: 15.6rem;
+    margin: 0.8rem;
+}
+.sub-heading {
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: #5f6368;
+    letter-spacing: none;
+    margin: 1rem 0 1rem 0rem;
+}
+.shows-you-might-like{
+    flex-direction: row;
+    flex: 1 1 30rem;
+    position: relative;
+}
+.shows{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px 10px;
+    
+}
+.show-head {
+    display: flex;
+  flex-wrap: wrap;
+   gap: 1rem;
+ position: relative;
+
+}
+
+.show-head>p {
+    font-size: 1.3rem;
+    color: var(--gray-text);
+}
+.show-head>h3{
+    font-weight: 600;
+}
+.artist-area .shows{
+    display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column;
+        gap: 13px;
+    width: 100%;
+  }
+
+.categories::-webkit-scrollbar-thumb {
+    background-color: #f1efef;
+}
+.category_img {
+    width: 10.6rem;
+    height: 15.6rem;
+    margin: 0.8rem;
+}
+.footer .box-container .box h2{
+    display: flex;
+    color: #5f6368 ;
+    font-size : 1.5rem;
+    padding: 1rem;
+
+}
+.footer .box-container .box a{
+   
+    color: #5f6368 ;
+    font-size : 1.2rem;
+}
