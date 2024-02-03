@@ -1,0 +1,94 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #eee;
+    color: #333;
+    font-family: "Roboto",Arial,sans-serif;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 1.4;
+    height: 100%;
+    position: relative;
+    z-index: -1;
+}
+nav{
+    background-color: #eee;
+    position: sticky;
+    top: 0;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 0.7rem;
+    color: #5f6368;
+    font-family: 
+    "Google Sans",roboto(wolf2),arial,sans-serif;
+    
+}
+nav img{
+    height: 2.5rem;
+    background-color: #eee;
+}
+nav .left-nav{
+    display: flex;
+    padding-left: 1rem;
+}
+nav ul{
+  
+    display: flex;
+    list-style: none;
+}
+nav ul li{
+    padding: 1rem;
+    font-size: 14px;
+}
+nav span{
+    padding: 0.5rem;
+    font-size: 22px;
+}
+.right-nav{
+    display: flex;
+    margin-top: 5px;
+}
+.right-nav-a{
+    padding: 9px 15px;
+  
+}
+.right-nav img{
+   border-radius: 50px;
+    padding: 5px;
+}
+.home-image{ 
+    height: 400px;
+    width: 500px;
+    border-radius: 5px;
+    background-size: cover;
+    background-image: linear-gradient(180deg, transparent 53.83%, rgba(68,34,99,1) 79.64%),url("https://play-lh.googleusercontent.com/4pnx9Ym_taCGfx6G-9RJ8v26hPlFNvog6kMLDdY_pjuVEJzXg4nJDe71KZcRcNXG7yXJ=w1702-h4320-rw");
+}
+.home-content{
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    /* float: left; */
+}
+.home-content-word{
+    font-size: 24px;
+    position: absolute;
+    top: -180px;
+   width: 460px;
+   padding: 0 10px;
+}
+.home-content-p{
+    font-size: 18px;
+    position: absolute;
+    top: -115px;
+    padding: 0 10px;
+}
+
+
+
