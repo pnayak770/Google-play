@@ -1,0 +1,34 @@
+span{
+    border: 1px solid black;
+    margin: 10px;
+    height: 50px;
+    width: 50px;
+    padding: 20px;
+    
+}
+.material-symbols-outlined{
+    border: none; 
+    height: auto;
+    width: auto;
+}
+.main img{
+    height: 300px;
+    width: 90%;
+    margin-left: 40px;
+}
+.Chrome h1{
+    margin-left: 40px;
+}
+.apps img{
+    height: 150px;
+    width: 150px;
+    margin-left: 40px;
+    overflow-x: auto;
+}
+.Getsocial{
+    margin-left: 40px;
+
+}
+.Featuredapps{
+    margin-left: 40px;
+}
