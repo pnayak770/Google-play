@@ -18,6 +18,7 @@ nav{
     background-color: #eee;
     position: sticky;
     top: 0;
+    z-index: 999;
 }
 
 .nav{
@@ -27,7 +28,7 @@ nav{
     color: #5f6368;
     font-family: 
     "Google Sans",roboto(wolf2),arial,sans-serif;
-    
+   
 }
 nav img{
     height: 2.5rem;
@@ -65,11 +66,25 @@ nav span{
 .home-image{ 
     height: 400px;
     width: 500px;
-    border-radius: 5px;
+    border-radius: 16px;
     background-size: cover;
     background-image: linear-gradient(180deg, transparent 53.83%, rgba(68,34,99,1) 79.64%),url("https://play-lh.googleusercontent.com/4pnx9Ym_taCGfx6G-9RJ8v26hPlFNvog6kMLDdY_pjuVEJzXg4nJDe71KZcRcNXG7yXJ=w1702-h4320-rw");
 }
-/* .home-content{
+.home-image2{
+    height: 400px;
+    width: 500px;
+    border-radius: 16px;
+    background-size: cover;
+    background-image: linear-gradient(180deg, transparent 43.83%, rgba(80,43,32,1) 79.64%),url("https://play-lh.googleusercontent.com/6xWg5v3qDVgB8mObUBtEnrdh9-jUCshkwRnUd8y0FgKfizC8FKEbbbpcI2qKIyVewhE=w1296-h728-rw");
+}
+.home-image3{
+    height: 400px;
+    width: 500px;
+    border-radius: 16px;
+    background-size: cover;
+    background-image:  linear-gradient(180deg, transparent 43.83%, rgba(24,24,24,1) 79.64%),url("https://play-lh.googleusercontent.com/0w4QGmTEDiTIY1QPoHtIv6uSvhhhkyIsOP0GhkhAM6CYtu7ks3vbSMuoe6x8w0ht5jaQMfjCNw=w1296-h728-rw");
+}
+ .home-content{
     color: #ffffff;
     display: flex;
     flex-direction: column;
@@ -88,41 +103,62 @@ nav span{
     top: -115px;
     padding: 0 20px;
 }
-.home-b{
-     position: relative; 
-    display: flex;
-    color: white;
-}
-.home-b-parta-word{
-    position: absolute;
-    top: 300px;
-    left: -300px;
-    display: flex;
-    flex-direction: row;
+.home-sub{
+    position: relative;
 }
 .home-b-parta{
+    position: absolute;
     display: flex;
-}
-.home-b-parta img{
-    height: 50px;
-    border-radius: 10px;
-    position: absolute;
-    top: 320px;
-    left: -480px;
-   
-}
-.text-a span{
-    margin-left: 15px;
-    font-size: 18px;
-    font-weight: 100;
-    position: absolute;
-    width: 200px;
-    top: 20px;
+    bottom: 20px;
+    left: 20px;
+    color: #ffffff;
+    gap: 10px;
 }
 .home{
-    display: flex; */
-   
+    display: flex;
+    margin: 50px 50px;
+    gap: 16px;
+    overflow-y: hidden;
+    overflow-x: scroll;
+}
+.home-b-partb{
+    position: absolute;
+    color: #ffffff;
+    bottom: 21px;
+    left: 330px;
+    text-align: center;
+}
+.home-b-parta-word{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 5px;
+}
+.imagea{
+    height: 60px;
+    width: 60px;
+    border-radius: 8px;
+}
+.text-b{
+    display: flex;
+   gap: 10px;
+}
+.install{
+    text-align: center;
+    padding: 5px 40px;
+    margin: 10px 0;
+    border-radius: 8px;
+    color:#ffffff;
+    opacity: 0.5;
 
+}
+.home-b-partb span{
+    font-size: 10px;
+    opacity: 0.5;
+}
+.home-b-parta-word img{
+    height: 20px;
+}
 header{
     font-size: 22px;
     color: #202124;
@@ -142,11 +178,11 @@ header{
 .sub-header-a:hover{
     color: #056449;
     background-color:#b3b6b9;
-   
 }
 .container1{
-    border: 2px solid green;
     margin: 20px 50px;
+    /* overflow-y: hidden;
+    overflow-x: auto; */
 }
 header{
     color: rgb(32,33,36);
@@ -158,38 +194,38 @@ header{
 .main{
     display: flex;
     flex-direction: row;
-    border: 2px solid black;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    margin: 0 40px;
 }
 .main img{
     border-radius: 12px;
     border-width: 0;
     box-shadow: 0 1px 2px 0 rgba(60,64,67,.3), 0 1px 3px 1px rgba(60,64,67,.15);
-    height: 56px;
-    width: 56px;
+    height: 65px;
+    width: 65px;
 }
 .sub-main{
-    border: 2px solid red;
-    margin: 10px;
+    /* margin: 10px; */
     display: flex;
     flex-direction: column;
-    justify-content: space-between
+   
     
 }
 .sub-main-a{
-    border: 2px solid black;
     display: flex;
     flex-direction: row;
-    margin: 10px ;
+    margin: 5px 0;
     align-items: center;
-    justify-content: space-between;
+    gap: 16px;
    padding: 15px 10px;
    padding-right: 80px;
    cursor: pointer;
+   width: 400px;
 }
 .b{
    display: flex;
    align-items: center;
-   padding: 0 15px;
 }
 .b-sub{
     display: flex;
