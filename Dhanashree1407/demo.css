@@ -6,63 +6,138 @@
 body{
     font-family: 'Roboto', sans-serif;
 }
+
+nav{
+  background-color: #ffffff;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  height: 10.5vh;
+  /* border: 2px solid  #02694c; */
+}
+*, *::before, *::after {box-sizing:border-box}
+html, body {padding:0; margin:0}
+body {min-height:100%}
+
+/* HEADER with drop-shadow on scroll */
 nav {
-    background-color: white;
-    position: sticky;
-    z-index: 99999;
-    top: 0;
-    right: 0;
+  height: 80px;  /* 64 + 16px */
+  position: sticky;
+  -webkit-position: sticky;
+  /* negative top allows for 16 pixels of movement before sticking */
+  top: -16px; 
+  /* make sure header overlaps main*/
+  z-index: 1;
+  color: white;
+  text-align: center;
+  -webkit-backface-visibility: hidden;
 }
 
-.nav {
-    display: flex;
-    justify-content: space-between;
-    padding: 0.7rem;
-    color: #5f6368;
-    font-family:
-        "Google Sans", roboto(wolf2), arial, sans-serif;
-
+/* PSEUDO ELEMENTS to create drop-shadow */
+nav::before,
+nav::after {
+  content: '';
+  display: block;
+  height: 16px;
+  /* make pseudo elements sticky as well */
+  position: sticky;
+  -webkit-position: sticky;
 }
 
-nav img {
-    height: 2.5rem;
-    background-color: #eee;
+/* SHADOW */
+nav::before {
+  top: 48px; /* shadow is at bottom of element, so at 48 + 16 = 64px */
+  box-shadow: 0px 2px 5px rgba(0,0,0,0.8);
 }
 
-nav .left-nav {
-    display: flex;
-    padding-left: 1rem;
+/* COVER */
+nav::after {
+  /* linear gradient from background color to transparent acts as
+     a transition effect so the shadow appears gradually */
+  background: linear-gradient(white 10%, rgba(255,255,255,0.8) 50%, rgba(255,255,255,0.4) 50%, transparent);
+  top: 0;
+  /* cover should fall over shadow */
+  z-index: 2;
 }
 
-nav ul {
-
-    display: flex;
-    list-style: none;
+/* HEADER CONTENT */
+nav >div {
+  background: rgb(255, 255, 255);
+  height: 64px;
+  padding: 20px;
+  position: sticky;
+  -webkit-position: sticky;
+  top: 0px;
+  /* compensate for shadow with negative margin */
+  margin-top: -16px;
+  /* content should fall over shadow and cover */
+  z-index: 3;
 }
 
-nav ul li {
-    padding: 1rem;
-    font-size: 0.875;
+.nav{
+  display: flex;
+  justify-content: space-between;
+  padding: 0.7rem;
+  color: #5f6368;
+  font-family: 
+  "Google Sans",roboto(wolf2),arial,sans-serif;
+  height: 9.9vh;
+}
+nav img{
+  height: 3rem;
+  background-color: #eee;
+}
+nav .left-nav{
+  display: flex;
+  padding-left: 1rem; 
 }
 
-nav span {
-    padding: 0.5rem;
-    font-size: 0.875rem;
+nav ul{
+
+  display: flex;
+  list-style: none;
+}
+nav ul li{
+  padding: 1rem;
+  font-size: 18px;
+}
+nav span{
+  padding: 0.5rem;
+  font-size: 27px;
+  font-weight:100rem;
+}
+.right-nav{
+  display: flex;
+  margin-top: 5px;
+}
+.right-nav-a{
+  padding: 9px 15px;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
 }
 
-.right-nav {
-    display: flex;
-    margin-top: 0.313rem;
+.right-nav-a  .material-icons{
+  height: 45px;
+  width: 50px;
+  font-size: 33px;
+  /* align-items: center; */
 }
-
-.right-nav-a {
-    padding: 0.563rem 0.938rem;
+.right-nav img{
+ border-radius: 50px;
+  padding: 5px;
+  align-items: center;
+}
+.icon img{
+  width:100%;
 
 }
-
-.right-nav img {
-    border-radius: 3.125rem;
-    padding: 0.313rem;
+.title
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .sec-b {
     background-color: rgba(255,161,178,1);
@@ -191,12 +266,12 @@ div .info {
 }
 
 .owl-carousel {
-    padding-left: 5.5%;
-    padding-right: 7%;
+    padding-left: 5%;
+    padding-right: 4%;
 }
 
 .owl-carousel .item img {
-    width: 200px;
+    width: 210px;
     border-radius: 25%;
     margin-bottom: 0.625rem;
     border: 0.056rem solid lightgrey;
@@ -207,7 +282,7 @@ div .info {
     align-items: center;
     display: flex;
     margin-left: 0.5px;
-    margin-right: 7rem;
+    margin-right: 4.7rem;
     /* overflow-y: hidden; */
     overflow-x: scroll;
     gap: 1.1rem;
@@ -230,39 +305,6 @@ div .info {
 
 .item .rating {
     color: #525151;
-}
-
-.footer {
-    margin-left: 18.5%;
-    margin-right: 18.5%;
-    margin-top: 2%;
-}
-
-.footer .footer1 {
-    margin-top: 2%;
-
-    display: flex;
-    gap: 20%;
-}
-
-.footer2 {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 2%;
-}
-
-.footer2-content {
-    display: flex;
-    gap: 5%;
-    font-size: 13px;
-}
-
-.footer2-content {
-    margin-bottom: 2%;
-}
-
-.footer2-content img {
-    width: 23px;
 }
 
 .sec9 {
@@ -350,6 +392,40 @@ div .info {
 .owl-9::-webkit-scrollbar-thumb {
     background-color: rgb(51, 220, 232);
 }
+.footer {
+    margin-left: 6%;
+    margin-right: 18.5%;
+    margin-top: 2%;
+}
 
+.footer .footer1 {
+    margin-top: 2%;
+    color: #575a5e;
+    display: flex;
+    gap: 20%;
+    font-weight: 40px;
+}
+
+.footer2 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2%;
+}
+
+.footer2-content {
+    display: flex;
+    gap: 6%;
+    font-size: 15px;
+}
+
+.footer2-content {
+    margin-bottom: 2%;
+    color: #575a5e;
+    font-size: 15px;
+}
+
+.footer2-content img {
+    width: 23px;
+}
 
   
