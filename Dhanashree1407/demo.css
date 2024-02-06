@@ -240,7 +240,7 @@ section{
 }
 
 .item:hover {
-    background-color: #e9e9e9;
+    background-color: rgba(251, 201, 201,0.4);
     /* opacity: 0.5; */
 }
 
