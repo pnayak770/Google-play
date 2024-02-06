@@ -1,0 +1,431 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+nav{
+  background-color: #ffffff;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  height: 10.5vh;
+  /* border: 2px solid  #02694c; */
+}
+*, *::before, *::after {box-sizing:border-box}
+html, body {padding:0; margin:0}
+body {min-height:100%}
+
+/* HEADER with drop-shadow on scroll */
+nav {
+  height: 80px;  /* 64 + 16px */
+  position: sticky;
+  -webkit-position: sticky;
+  /* negative top allows for 16 pixels of movement before sticking */
+  top: -16px; 
+  /* make sure header overlaps main*/
+  z-index: 1;
+  color: white;
+  text-align: center;
+  -webkit-backface-visibility: hidden;
+}
+
+/* PSEUDO ELEMENTS to create drop-shadow */
+nav::before,
+nav::after {
+  content: '';
+  display: block;
+  height: 16px;
+  /* make pseudo elements sticky as well */
+  position: sticky;
+  -webkit-position: sticky;
+}
+
+/* SHADOW */
+nav::before {
+  top: 48px; /* shadow is at bottom of element, so at 48 + 16 = 64px */
+  box-shadow: 0px 2px 5px rgba(0,0,0,0.8);
+}
+
+/* COVER */
+nav::after {
+  /* linear gradient from background color to transparent acts as
+     a transition effect so the shadow appears gradually */
+  background: linear-gradient(white 10%, rgba(255,255,255,0.8) 50%, rgba(255,255,255,0.4) 50%, transparent);
+  top: 0;
+  /* cover should fall over shadow */
+  z-index: 2;
+}
+
+/* HEADER CONTENT */
+nav >div {
+  background: rgb(255, 255, 255);
+  height: 64px;
+  padding: 20px;
+  position: sticky;
+  -webkit-position: sticky;
+  top: 0px;
+  /* compensate for shadow with negative margin */
+  margin-top: -16px;
+  /* content should fall over shadow and cover */
+  z-index: 3;
+}
+
+.nav{
+  display: flex;
+  justify-content: space-between;
+  padding: 0.7rem;
+  color: #5f6368;
+  font-family: 
+  "Google Sans",roboto(wolf2),arial,sans-serif;
+  height: 9.9vh;
+}
+nav img{
+  height: 3rem;
+  background-color: #eee;
+}
+nav .left-nav{
+  display: flex;
+  padding-left: 1rem; 
+}
+
+nav ul{
+
+  display: flex;
+  list-style: none;
+}
+nav ul li{
+  padding: 1rem;
+  font-size: 18px;
+}
+nav span{
+  padding: 0.5rem;
+  font-size: 27px;
+  font-weight:100rem;
+}
+.right-nav{
+  display: flex;
+  margin-top: 5px;
+}
+.right-nav-a{
+  padding: 9px 15px;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+}
+
+.right-nav-a  .material-icons{
+  height: 45px;
+  width: 50px;
+  font-size: 33px;
+  /* align-items: center; */
+}
+.right-nav img{
+ border-radius: 50px;
+  padding: 5px;
+  align-items: center;
+}
+.icon img{
+  width:100%;
+
+}
+.title
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.sec-b {
+    background-color: rgba(255,161,178,1);
+    height: 65vh;
+    width: 100%;
+    margin: 1.80rem 0 1.99rem 0;
+
+}
+.sec-b .pinkpic span{
+    padding-left: 80px;
+    font-size: 16.8px;
+}
+.sec-b .pinkpic{
+    height: 80px;
+}
+
+.sec-b  span h2 {
+   padding-left: 80px;
+   padding-top: 11px;
+   margin: 0;  
+}
+.sec-b .pic-1 .img-2 img{
+    
+    height: 54vh;
+    width: 100%;
+    background-size: cover;
+}
+.pic-1{
+    display: flex;
+    flex-direction: row;
+}
+.pic-1 .sq-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 66.5%;
+    height: 53.9vh;
+    
+}
+.sq-1{
+    display: flex;
+}    
+.owl-1{
+    padding-left: 1%;
+    /* padding-right: 7%; */
+}
+
+.owl-1 .item img {
+    width: 180px;
+    border-radius: 25%;
+    margin-bottom: 0.625rem;
+    border: 0.056rem solid lightgrey;
+    box-shadow: 0 1px 2px 0 rgba(60, 64, 67, .3), 0 1px 3px 1px rgba(60, 64, 67, .15);
+}
+.owl-1 .item{
+    height: 250px;
+}
+.ow1.info{
+    padding-bottom: 100px;
+}
+.owl-1 .rating{
+    padding-top: 7px;
+    width: 100%;
+}
+ 
+.owl-1 {
+    align-items: center;
+    display: flex;
+    margin-left: 0.5px;
+    margin-right: 7rem;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    gap: 1.1rem;
+    height: 300px;
+}
+
+.owl-1::-webkit-scrollbar {
+    height: 5px;
+    width: 10px;
+    /* display: none; */
+}
+
+.owl-1::-webkit-scrollbar-thumb {
+    background-color: rgb(253, 141, 160);
+    display: none;
+}
+section{
+    margin-bottom: 40px;
+}
+
+
+.item {
+    /* border: 2px solid red; */
+    border-radius: 5px;
+    height: 100%;
+    width: 14rem;
+    padding: 0.55rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.item:hover {
+    background-color: rgba(251, 201, 201,0.4);
+    /* opacity: 0.5; */
+}
+
+header {
+    margin-left: 5.55%;
+    /* margin-bottom: 10px; */
+    padding-bottom: 2rem;
+}
+
+.item .info {
+    font-size: 1.19rem;
+    height: -4rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 2px;
+    /*  justify-content: left;  */
+}
+
+div .info {
+    font-size: 1rem;
+    font-weight: 1.5rem;
+}
+
+.owl-carousel {
+    padding-left: 5%;
+    padding-right: 4%;
+}
+
+.owl-carousel .item img {
+    width: 210px;
+    border-radius: 25%;
+    margin-bottom: 0.625rem;
+    border: 0.056rem solid lightgrey;
+    box-shadow: 0 1px 2px 0 rgba(60, 64, 67, .3), 0 1px 3px 1px rgba(60, 64, 67, .15);
+}
+
+.owl-carousel {
+    align-items: center;
+    display: flex;
+    margin-left: 0.5px;
+    margin-right: 4.7rem;
+    /* overflow-y: hidden; */
+    overflow-x: scroll;
+    gap: 1.1rem;
+}
+
+.owl-carousel::-webkit-scrollbar {
+    height: 2.5px;
+    width: 10px;
+    /* display: none; */
+}
+
+.owl-carousel::-webkit-scrollbar-thumb {
+    background-color: hsl(0, 18%, 97%);
+    display: none;
+}
+
+.item .info span {
+    display: flex;
+}
+
+.item .rating {
+    color: #525151;
+}
+
+.sec9 {
+    background-color: rgb(52, 212, 224);
+    height: 65vh;
+    width: 100%;
+    margin: 1.80rem 0 1.99rem 0;
+
+}
+.sec9 .bluepic span{
+    padding-left: 80px;
+    font-size: 16.8px;
+}
+.sec9 .bluepic{
+    height: 80px;
+}
+
+.sec9  span h2 {
+   padding-left: 80px;
+   padding-top: 11px;
+   margin: 0;  
+}
+.sec9 .pic .img-1 img{
+    
+    height: 54vh;
+    width: 100%;
+    background-size: cover;
+}
+.pic{
+    display: flex;
+    flex-direction: row;
+}
+.pic .sq-9{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 66.5%;
+    height: 53.9vh;
+    
+}
+.sq-9{
+    display: flex;
+}    
+    
+.owl-9{
+    padding-left: 1%;
+    /* padding-right: 7%; */
+}
+
+.owl-9 .item img {
+    width: 180px;
+    border-radius: 25%;
+    margin-bottom: 0.625rem;
+    border: 0.056rem solid lightgrey;
+    box-shadow: 0 1px 2px 0 rgba(60, 64, 67, .3), 0 1px 3px 1px rgba(60, 64, 67, .15);
+}
+.owl-9 .item{
+    height: 250px;
+}
+.owl-9 .info{
+    padding-bottom: 100px;
+}
+.owl-9 .rating{
+    padding-top: 7px;
+    width: 100%;
+}
+ 
+.owl-9 {
+    align-items: center;
+    display: flex;
+    margin-left: 0.5px;
+    margin-right: 7rem;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    gap: 1.1rem;
+    height: 300px;
+}
+
+.owl-9::-webkit-scrollbar {
+    height: 5px;
+    width: 10px;
+    /* display: none; */
+}
+
+.owl-9::-webkit-scrollbar-thumb {
+    background-color: rgb(51, 220, 232);
+}
+.footer {
+    margin-left: 6%;
+    margin-right: 18.5%;
+    margin-top: 2%;
+}
+
+.footer .footer1 {
+    margin-top: 2%;
+    color: #575a5e;
+    display: flex;
+    gap: 20%;
+    font-weight: 40px;
+}
+
+.footer2 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2%;
+}
+
+.footer2-content {
+    display: flex;
+    gap: 6%;
+    font-size: 15px;
+}
+
+.footer2-content {
+    margin-bottom: 2%;
+    color: #575a5e;
+    font-size: 15px;
+}
+
+.footer2-content img {
+    width: 23px;
+}
+
+  

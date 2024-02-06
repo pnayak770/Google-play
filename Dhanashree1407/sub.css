@@ -1,0 +1,279 @@
+*{
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Roboto', sans-serif;
+}
+nav{
+  background-color: #ffffff;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  height: 10.5vh;
+  /* border: 2px solid  #02694c; */
+}
+*, *::before, *::after {box-sizing:border-box}
+html, body {padding:0; margin:0}
+body {min-height:100%}
+
+/* HEADER with drop-shadow on scroll */
+nav {
+  height: 80px;  /* 64 + 16px */
+  position: sticky;
+  -webkit-position: sticky;
+  /* negative top allows for 16 pixels of movement before sticking */
+  top: -16px; 
+  /* make sure header overlaps main*/
+  z-index: 1;
+  color: white;
+  text-align: center;
+  -webkit-backface-visibility: hidden;
+}
+
+/* PSEUDO ELEMENTS to create drop-shadow */
+nav::before,
+nav::after {
+  content: '';
+  display: block;
+  height: 16px;
+  /* make pseudo elements sticky as well */
+  position: sticky;
+  -webkit-position: sticky;
+}
+
+/* SHADOW */
+nav::before {
+  top: 48px; /* shadow is at bottom of element, so at 48 + 16 = 64px */
+  box-shadow: 0px 2px 5px rgba(0,0,0,0.8);
+}
+
+/* COVER */
+nav::after {
+  /* linear gradient from background color to transparent acts as
+     a transition effect so the shadow appears gradually */
+  background: linear-gradient(white 10%, rgba(255,255,255,0.8) 50%, rgba(255,255,255,0.4) 50%, transparent);
+  top: 0;
+  /* cover should fall over shadow */
+  z-index: 2;
+}
+
+/* HEADER CONTENT */
+nav >div {
+  background: rgb(255, 255, 255);
+  height: 64px;
+  padding: 20px;
+  position: sticky;
+  -webkit-position: sticky;
+  top: 0px;
+  /* compensate for shadow with negative margin */
+  margin-top: -16px;
+  /* content should fall over shadow and cover */
+  z-index: 3;
+}
+
+.nav{
+  display: flex;
+  justify-content: space-between;
+  padding: 0.7rem;
+  color: #5f6368;
+  font-family: 
+  "Google Sans",roboto(wolf2),arial,sans-serif;
+  height: 9.9vh;
+}
+nav img{
+  height: 3rem;
+  background-color: #eee;
+}
+nav .left-nav{
+  display: flex;
+  padding-left: 1rem; 
+}
+
+nav ul{
+
+  display: flex;
+  list-style: none;
+}
+nav ul li{
+  padding: 1rem;
+  font-size: 18px;
+}
+nav span{
+  padding: 0.5rem;
+  font-size: 27px;
+  font-weight:100rem;
+}
+.right-nav{
+  display: flex;
+  margin-top: 5px;
+}
+.right-nav-a{
+  padding: 9px 15px;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+}
+
+.right-nav-a  .material-icons{
+  height: 45px;
+  width: 50px;
+  font-size: 33px;
+  /* align-items: center; */
+}
+.right-nav .img-i img{
+ border-radius: 50px;
+  padding: 4px;
+  
+  /* align-items: center; */
+}
+.right-nav .img-i{
+  height: 40px ;
+}
+.icon img{
+  width:100%;
+
+}
+.title
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.btn
+{
+  width:145px;
+  height:35px;
+  border-radius: 50px;
+  margin:10px;
+  background-color: transparent;
+  border: 1px solid rgb(142, 142, 142);
+  font-size: 1rem;
+  color:rgb(77, 77, 77)
+}
+.age-groups .btn-1{
+  background-color: rgb(189, 255, 235,0.5);
+  border: none;
+  color: #02694c;
+}
+
+section{
+    margin-bottom: 2.188rem;
+}
+
+.item {
+    /* border: 2px solid red; */
+    border-radius: 0.313rem;
+    height: 100%;
+    width: 14.5rem;
+    padding: 0.55rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.item:hover {
+    background-color: #e9e9e9;
+    /* opacity: 0.5; */
+}
+
+header {
+    margin-left: 6.3%;
+    margin-bottom: 10px;
+    padding-bottom: 0.8rem;
+}
+
+.item .info {
+    font-size: 1.19rem;
+    height: -4rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 0.125rem
+    /*  justify-content: left;  */
+}
+
+div .info {
+    font-size: 1rem;
+    font-weight: 1.5rem;
+}
+
+.owl-carousel {
+    padding-left: 5%;
+   /*  padding-right: 2%; */
+}
+
+.owl-carousel .item img {
+    width: 12.8rem;
+    border-radius: 25%;
+    margin-bottom: 0.625rem;
+    border: 0.056rem solid lightgrey;
+    box-shadow: 0 0.063rem 0.125rem 0 rgba(60, 64, 67, .3), 0 0.063rem 0.188rem 0.063rem rgba(60, 64, 67, .15);
+}
+
+.owl-carousel {
+    align-items: center;
+    display: flex;
+    margin-left: 0.031rem;
+    margin-right: 5.5rem;
+    /* overflow-y: hidden; */
+    overflow-x: scroll;
+    gap: 1.1rem;
+}
+
+.owl-carousel::-webkit-scrollbar {
+    height: 0.156px;
+    width: 0.625rem;
+    /* display: none; */
+}
+
+.owl-carousel::-webkit-scrollbar-thumb {
+    background-color: hsl(0, 18%, 97%);
+    display: none;
+}
+
+.item .info span {
+    display: flex;
+}
+
+.item .rating {
+    color: #525151;
+}
+.footer {
+  margin-left: 6%;
+  margin-right: 18.5%;
+  margin-top: 2%;
+}
+
+.footer .footer1 {
+  margin-top: 2%;
+  color: #575a5e;
+  display: flex;
+  gap: 20%;
+  font-weight: 40px;
+}
+
+.footer2 {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2%;
+}
+
+.footer2-content {
+  display: flex;
+  gap: 6%;
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.footer2-content {
+  margin-bottom: 2%;
+  color: rgb(95, 99, 104);
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.footer2-content img {
+  width: 23px;
+}

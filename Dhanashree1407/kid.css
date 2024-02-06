@@ -133,3 +133,32 @@ div .info{
   justify-content: center;
   align-items: center;
 }
+.footer{
+  margin-left: 18.5%;
+  margin-right: 18.5%;
+  margin-top: 2%;
+}
+.footer .footer1{
+  margin-top: 2%;
+ 
+  display: flex;
+  gap: 20%;
+}
+
+.footer2{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2%;
+}
+.footer2-content{
+  display: flex;
+  gap: 5%;
+  font-size: 13px;
+}
+
+.footer2-content{
+  margin-bottom: 2%;
+}
+.footer2-content img{
+  width: 23px;
+}
