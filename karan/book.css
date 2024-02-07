@@ -76,42 +76,6 @@ nav span{
    border-radius: 50px;
     padding: 0.2rem;
 }
-/* 
-.dropdown .content a{
-    
-} 
-
-.dropdown .content{
-    position: absolute;
-    display: none;
-    overflow-y: scroll;
-    max-width: 300px;
-    max-height: 500px;
-    padding: 20px 30px ;
-    box-shadow: 0px -25px 20px -20px rgba(0,0,0,0.45),
-    25px 0px 20px -20px rgba(0,0,0,0.45),
-    0px 25px 20px -20px rgba(0,0,0,0.45),
-    -25px 0px 20px -20px rgba(0,0,0,0.45);
-}
-
-
-
-.dropdown:hover .content{
-    display: block;
-    z-index: 1;
-}
-
-.dropdown .dropdown-heading{
-    border: 1px solid grey;
-    padding: 2px 10px;
-    border-radius: 25px;
-    cursor: pointer;
-    font-size: 1rem;
-}
-
-h1{
-    font-size: 1.5rem;
-} */
 
 /* dropdown menu */
 
@@ -233,7 +197,7 @@ h1{
 .carsol-item{
     display: flex;
     flex-direction: row;
-    gap: 2rem;
+    gap: 1rem;
     overflow-x: scroll;
     overflow-y: hidden;
     /* border: 3px solid black; */
@@ -367,7 +331,7 @@ h1{
     display: flex;
     flex-direction: column;
     /* margin-left: 19.6rem; */
-    gap: 3px;
+    gap: 1px;
     margin-bottom: 1%;
     align-items: center;
     /* border: 1px solid black; */
@@ -464,7 +428,7 @@ h1{
     flex-direction: column;
 }
 .line{
-    margin-left: 20rem;
+    margin-right: 20rem;
     width: 80%;
     height: 1px;
     margin-top: 2%;
@@ -672,14 +636,14 @@ h1{
     }
     .section1 .heading h2{
         display: flex;
-        margin-left:  -13rem;
+        margin-left:  2rem;
     }
     .section2 .section-content .section-content2 h2 ,p {
-        margin: 0px -17rem;
+        margin: 0px 2rem;
     }
 
     .section6 .heading h2{
-        margin: 2rem -17rem;
+        margin: 2rem 2rem;
     }
 
     .section2-links {
@@ -691,7 +655,7 @@ h1{
     }
 
     .heading h2{
-        margin-left: -17rem;
+        margin-left: 2rem;
     }
     .nav-links{
         display: flex;
@@ -713,14 +677,14 @@ h1{
     }
     .section1 .heading h2{
         display: flex;
-        margin-left:  -13rem;
+        margin-left:  2rem;
     }
     .section2 .section-content .section-content2 h2 ,p {
-        margin: 0px -17rem;
+        margin: 0px 2rem;
     }
 
     .section6 .heading h2{
-        margin: 2rem -17rem;
+        margin: 2rem 2rem;
     }
 
     .section2-links {
@@ -746,11 +710,11 @@ h1{
 @media screen and (min-width: 1345px) and (max-width: 1454px){
 
     .row{
-        width: 80vw;
+        width: 96vw;
         margin-left: 0rem;
     }
     .nav{
-        width: 63rem;
+        width: 83rem;
     }
     .nav2{
         width: 20vw;
@@ -758,14 +722,14 @@ h1{
     
     .section1 .heading h2{
         display: flex;
-        margin-left:  -17rem;
+        margin-left:  1rem;
     }
     .section2 .section-content .section-content2 h2 ,p {
-        margin: 0px -17rem;
+        margin: 0px 1rem;
     }
 
     .section6 .heading h2{
-        margin: 2rem -17rem;
+        margin: 2rem 1rem;
     }
 
     .section2-links {
@@ -777,7 +741,7 @@ h1{
     }
 
     .heading h2{
-        margin-left: -17rem;
+        margin-left: 1;
     }
     .nav-links{
         display: flex;
@@ -791,22 +755,49 @@ h1{
 
 @media screen and (min-width: 1201px) and (max-width: 1344px){
 
+
+    .container10{
+        display: flex;
+        flex-direction: row;
+        overflow-y: hidden;
+        overflow-x: scroll;
+        width: 90vw;
+    }
+
+    .carsol .carsol-item{
+        margin:0rem 2rem;
+        width: 82rem;
+    }
+
+    .carsol-item{
+        
+        width: 85rem;
+        margin-right: 0;
+    }
+
+    nav{
+        width: 90rem;
+    }
+    .row .carsol-item{
+        width: 100rem;
+        margin-left: 2rem;
+        margin-right: -7rem;
+    }
     .nav2{
         display: inline-block;
     }
-    .carsol-item{
-        margin: 2rem;
-    }
+   
     .section1 .heading h2{
         display: flex;
-        margin-left:  -17rem;
+        margin-left:  1rem;
     }
     .section2 .section-content .section-content2 h2 ,p {
-        margin: 0px -17rem;
+        margin: 0px 1rem;
     }
 
+    
     .section6 .heading h2{
-        margin: 2rem -17rem;
+        margin: 2rem 1rem;
     }
 
     .section2-links {
@@ -818,7 +809,7 @@ h1{
     }
 
     .heading h2{
-        margin-left: -17rem;
+        margin-left: 1rem;
     }
     .nav-links{
         display: flex;
@@ -830,6 +821,32 @@ h1{
 
 @media screen and (min-width: 1000px) and (max-width: 1200px){
 
+    .carsol-item{
+        margin-left: ;
+        width: 68rem;
+        margin-right: 0;
+    }
+    .section4-template{
+        background-color: rgb(41, 173, 255);
+        height: 40vh;
+        margin-left: 4.5rem;
+        margin-top: 3rem;
+        border-radius: 5px;
+        width: 90rem;
+    }
+   
+    .footer-sub2-a{
+        display: flex;
+        flex-wrap: wrap;
+        width: 50vw;
+    }
+    .container10{
+        display: flex;
+        flex-direction: row;
+        overflow-y: hidden;
+        overflow-x: scroll;
+        width: 80vw;
+    }
     .section4-template{
         width: 55.9rem;;
     }
@@ -837,26 +854,26 @@ h1{
         width: 60rem;
     }
     .nav{
-        width: 56rem;
+        width: 74rem;
     }
-    .carsol-item{
+    .carsol .carsol-item{
         margin:0rem 2rem;
-        width: 56rem;
+        width: 66rem;
     }
     .section1 .heading h2{
         display: flex;
-        margin-left:  -17rem;
+        margin-left:  1rem;
     }
     .section2 .section-content .section-content2 h2 ,p {
-        margin: 0px -17rem;
+        margin: 0 1rem;
     }
 
     .section6 .heading h2{
-        margin: 2rem -17rem;
+        margin: 1rem 1rem;
     }
 
     .section2-links {
-        margin: 1rem 2rem;
+        margin: 1rem 1rem;
     }
     
     .section6 .container10{
@@ -864,16 +881,14 @@ h1{
     }
 
     .heading h2{
-        margin-left: -17rem;
+        margin-left: 1rem;
     }
     .nav-links{
         display: flex;
-        flex-wrap: wrap;
-        width: 80vw;
+        flex-wrap: nowrap;
+        width: 100vw;
     }
-    body{
-        margin-right: -10rem;
-    }
+    
 }
 
 
@@ -898,14 +913,14 @@ h1{
 
     .section1 .heading h2{
         display: flex;
-        margin-left:  -17rem;
+        margin-left:  1rem;
     }
     .section2 .section-content .section-content2 h2 ,p {
-        margin: 0px -17rem;
+        margin: 0px 1rem;
     }
 
     .section6 .heading h2{
-        margin: 2rem -17rem;
+        margin: 2rem 1rem;
     }
 
     .section2-links {
@@ -917,28 +932,46 @@ h1{
     }
 
     .heading h2{
-        margin-left: -17rem;
+        margin-left: 1rem;
     }
     .nav-links{
         display: flex;
         flex-wrap: wrap;
         width: 100vw;
     }
+    .right-nav{
+        margin-right: -5rem;
+    }
 
 }
 
-/* @media screen and (min-width : 865px){
-    .lower-nav{
-        display: none;
+@media screen and (max-width : 767px){
+    nav ul {
+        display: none;    
     }
-} */
+}
 
 
 @media screen and (min-width: 768px) and (max-width: 865px) {
+    
+    
+    
     .container1{
         /* position: relative;
         left: 0; */
         margin-left: 2rem;
+    }
+    .right-nav{
+        display: flex;
+        margin-top: 0.5rem;
+        margin-right: 0.1rem;
+    }
+    nav ul li{
+        padding: 0.5rem;    
+    }
+
+    nav ul {
+        display: none;    
     }
     .line{
         margin-left: 2rem;
@@ -950,9 +983,9 @@ h1{
     }
     
     .nav{
-        width: 50rem;
+        width: 100vw;
         padding: 0rem 2rem;
-        margin: 2rem;
+        margin-left: -2rem;
     }
 
     .carsol-item{
@@ -963,16 +996,13 @@ h1{
     }
 
     .section1 .heading h2{
-        margin-left: -17rem;
+        margin-left: 1rem;
     }
 
     .section2 .section-content .section-content2 h2 , p{
-        margin-left: -17rem;
-    }
-
-    .heading{
         margin-left: 2rem;
     }
+
 
     .section6 .section2-links{
         margin: 2rem;
@@ -986,13 +1016,23 @@ h1{
     /* nav ul{
         display: none;
     } */
-    /* .carsol-item{
-        margin-left: 2rem;
-        margin-right: 2rem;
-    } */
 
+    .section1 .heading h2{
+        margin-left: 2rem ;
+    }
+
+    .carsol-item{
+        margin-left: 0rem;
+        margin-right: 0rem;
+    }
+
+    .right-nav{
+        display: flex;
+        margin-top: 0.5rem;
+        margin-right: 0rem;
+    }
     .nav{
-        width: 56rem;
+        width: 43rem;
     }
     .carsol-item{
         margin-left: 2rem;
@@ -1006,12 +1046,28 @@ h1{
     .line{
         margin-left: 2rem;
     }
-    .section1 .heading h2{
-        margin-left: -15rem;
-    }
+    
 
 }
-/*
+
 @media screen and (max-width: 600px){
-    
-} */
+    .footer-sub2-a{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .footer-sub1{
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 0.2rem;
+    }
+    .footer2{
+        margin-left: 0;
+    }
+    .right-nav{
+        margin-right: 0;
+    }
+
+    .container1{
+        margin-left: 0rem;
+    }
+}
