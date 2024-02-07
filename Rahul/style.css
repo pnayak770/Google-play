@@ -73,6 +73,13 @@ nav span{
   display: flex;
   position: relative;
 }
+.item{
+  padding:10px;
+}
+.item:hover{
+  background-color: rgb(0,0,0,0.1);
+  
+}
 .item-a{
   display: inline-flex;
   margin: 0 0.3rem 0 0;
