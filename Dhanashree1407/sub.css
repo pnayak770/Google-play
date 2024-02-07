@@ -167,14 +167,14 @@ section{
     /* border: 2px solid red; */
     border-radius: 0.313rem;
     height: 100%;
-    width: 14.5rem;
+    width: 15rem;
     padding: 0.55rem;
     display: flex;
     flex-direction: column;
 }
 
 .item:hover {
-    background-color: #e9e9e9;
+    background-color: rgba(219, 219, 219, 0.4);
     /* opacity: 0.5; */
 }
 
@@ -199,11 +199,6 @@ div .info {
     font-weight: 1.5rem;
 }
 
-.owl-carousel {
-    padding-left: 5%;
-   /*  padding-right: 2%; */
-}
-
 .owl-carousel .item img {
     width: 12.8rem;
     border-radius: 25%;
@@ -215,7 +210,7 @@ div .info {
 .owl-carousel {
     align-items: center;
     display: flex;
-    margin-left: 0.031rem;
+    margin-left: 5rem;
     margin-right: 5.5rem;
     /* overflow-y: hidden; */
     overflow-x: scroll;
