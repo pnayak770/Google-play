@@ -226,13 +226,16 @@ nav span{
     overflow-x: scroll;
     margin-left: 19.6rem;
 }
-
+/* .container10{
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+} */
 .section2-carts1{
     display: flex;
-    flex-direction: column;
-    /* margin-left: 19.6rem; */
-    gap: 3px;
-    margin-bottom: 1%;
+    margin-left: 1.5%;
+    gap: 40px;
+    margin-bottom: 0.5%;
     align-items: center;
     /* border: 1px solid black; */
 }
@@ -248,7 +251,7 @@ nav span{
     display: flex;
     gap: 3%; 
     justify-content: center;
-    width: 20.75rem;
+    width: 30.75rem;
     padding: 2px;
 }
 
@@ -262,7 +265,7 @@ nav span{
 .section2-carts-items:hover{
     background-color: var(--light-grey);
     border-radius: 5px;
-    
+    margin-left: 1rem;
     cursor: pointer;    
 } 
 
