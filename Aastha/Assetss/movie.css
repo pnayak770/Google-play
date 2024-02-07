@@ -67,6 +67,7 @@ nav span{
 .right-nav{
     display: flex;
     margin-top: 0.5rem;
+    margin-left: 2rem;
 }
 .right-nav-a{
     padding: 9px 15px;
@@ -76,7 +77,138 @@ nav span{
    border-radius: 50px;
     padding: 0.2rem;
 }
+/* 
+.dropdown .content a{
+    
+} 
 
+.dropdown .content{
+    position: absolute;
+    display: none;
+    overflow-y: scroll;
+    max-width: 300px;
+    max-height: 500px;
+    padding: 20px 30px ;
+    box-shadow: 0px -25px 20px -20px rgba(0,0,0,0.45),
+    25px 0px 20px -20px rgba(0,0,0,0.45),
+    0px 25px 20px -20px rgba(0,0,0,0.45),
+    -25px 0px 20px -20px rgba(0,0,0,0.45);
+}
+
+
+
+.dropdown:hover .content{
+    display: block;
+    z-index: 1;
+}
+
+.dropdown .dropdown-heading{
+    border: 1px solid grey;
+    padding: 2px 10px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+h1{
+    font-size: 1.5rem;
+} */
+
+/* dropdown menu */
+
+
+.nav-links{
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    width: 75vw;
+    margin-top: 2rem;
+}
+
+.open-in-new{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.2rem;
+}
+.open-in-new-list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.13rem 1.25rem;
+}
+
+.open-in-new:hover{
+    background-color: var(--light-grey);
+    cursor: pointer;
+    border: 1px ;
+    border-radius: 15px;
+}
+
+.dropdown-heading{
+    border: 1px solid #dddfe3    ;
+    border-radius: 15px;
+    padding: 0.3em 1.25em;
+    cursor: pointer;
+}
+
+#material-icon{
+    font-size: 1.2rem;
+}
+
+
+
+.dropdown{
+    position: relative;
+    display: inline-block;
+}
+
+.nav-links{
+    position: relative;
+}
+.dropdown .content{
+    position: absolute;
+    display: none;
+    z-index: 1;
+    background-color: white;
+    overflow-y: scroll;
+    width: 200px;
+    max-height: 400px;
+    padding: 20px 30px ;
+    box-shadow: 0px -25px 20px -20px rgba(0,0,0,0.45),
+    25px 0px 20px -20px rgba(0,0,0,0.45),
+    0px 25px 20px -20px rgba(0,0,0,0.45),
+    -25px 0px 20px -20px rgba(0,0,0,0.45);
+}
+
+.content a{
+    display: block;
+    text-decoration: none;
+    color: black;
+    padding: 10px 2px;
+    font-size: 14px;
+}
+
+.dropdown:hover .content{
+    display: block;
+}
+.content a:hover{
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover{
+    display: block;
+}
+
+.dropdown .content::-webkit-scrollbar{
+    display: none;
+}
+
+.nav-links .dropdown:hover{
+    background-color: var(--light-grey);
+    border-radius: 25px;
+}
 
 
 
@@ -90,7 +222,7 @@ nav span{
 
 .heading{
     display: flex;
-    margin-left: 6.2rem;
+    margin-left: 19.2rem;
     margin-top: 2rem;
 }
 
@@ -101,8 +233,8 @@ nav span{
     gap: 2rem;
     overflow-x: scroll;
     overflow-y: hidden;
-    border: 3px solid black;
-    margin: 20px 100px;
+    /* border: 3px solid black; */
+    margin: 20px 300px;
 }
 .carsol-item::-webkit-scrollbar {
     display: none;
@@ -175,8 +307,7 @@ nav span{
 
 .section6 .container10{
     overflow-x: scroll;
-    margin-left: 6.4rem;
-    margin-right: 6rem;
+    margin-left: 18.4rem;
 }
 .container10::-webkit-scrollbar{
     display: none;
@@ -184,16 +315,15 @@ nav span{
 /* section2 */
 
 .section2{
-    margin-top: 1rem;
+    margin-top: 2.25rem;
 }
 
 .section-content{
-    margin-left: 6.1rem;
+    margin-left: 19.1rem;
 }
 
 .section2-links{
-    margin-top: 1rem;
-    margin-left: 6rem;
+    margin-left: 20rem;
     display: flex;
     gap: 5%;
 }
@@ -226,16 +356,13 @@ nav span{
     overflow-x: scroll;
     margin-left: 19.6rem;
 }
-/* .container10{
-  display: flex;
-  flex-direction: row;
-  gap: 1rem;
-} */
+
 .section2-carts1{
     display: flex;
-    margin-left: 1.5%;
-    gap: 40px;
-    margin-bottom: 0.5%;
+    flex-direction: column;
+    /* margin-left: 19.6rem; */
+    gap: 3px;
+    margin-bottom: 1%;
     align-items: center;
     /* border: 1px solid black; */
 }
@@ -251,7 +378,7 @@ nav span{
     display: flex;
     gap: 3%; 
     justify-content: center;
-    width: 30.75rem;
+    width: 20.75rem;
     padding: 2px;
 }
 
@@ -265,7 +392,7 @@ nav span{
 .section2-carts-items:hover{
     background-color: var(--light-grey);
     border-radius: 5px;
-    margin-left: 1rem;
+    
     cursor: pointer;    
 } 
 
@@ -337,15 +464,21 @@ nav span{
 /* footer */
 
 .footer{
-    margin-left: 1.5%;
-    margin-right: 18.5%;
+    margin-left: 18.5%;
+    margin-right: 49.5%;
     margin-top: 2%;
 }
 .footer .footer1{
     margin-top: 2%;
-    /* margin-left: 1rem; */
-    /* display: flex; */
+    margin-left: 8rem;
+    
+    display: flex;
     gap: 20%;
+}
+.footer .footer1 .h3{
+    margin-top: 2%;
+    margin-left: 8rem;
+    
 }
 
 .footer2{
@@ -355,15 +488,218 @@ nav span{
 }
 .footer2-content{
     display: flex;
+    margin-right: 28rem;
     gap: 5%;
-    font-size: 10px;
+    font-size: 13px;
 }
 
 .footer2-content{
     margin-bottom: 2%;
+    margin-left: 8rem;
+
 }
 .footer2-content img{
     width: 23px;
+}
+
+
+
+
+.footer1{
+    display: flex;
+    justify-content: start;
+    padding: 0.7rem;
+    margin-left: 1rem;
+
+  }
+  .footer-a{
+    margin-right: 100rem;
+  }
+  .footer-p{
+    margin: 1rem 0;
+  }
+  a{
+    text-decoration: none;
+    color: #5F6368;
+    font-size: 5.9rem;
+  }
+  .footer-s{
+    color: #5F6368;
+    font-weight:600;
+  }
+  a:hover{
+    color: rgb(57, 143, 57);
+  }
+  .footer2{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.25rem;
+    margin: 0 0.6rem;
+  }
+  .footer-sub1{
+    display: flex;
+    gap: 2.25rem;
+  }
+  .footer-sub2-a{
+    display: flex;
+    flex-direction: row;
+   gap: 1.25rem;
+  }
+  .footer-sub2-a img{
+    height: 1.25rem;
+  }
+  .footer-subA a{
+    font-style: normal;
+    font-size: 0.75rem;
+    
+  }
+.lower-nav ul{
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: space-around;
+gap: 20px;
+list-style: none;
+}
+.lower-nav{
+    position: sticky;
+    bottom: 0;
+   z-index: 999;
+   background-color: #fff;
+}
+@media only screen and (max-width:800px) {
+    .home{
+        width: 90%;
+    }
+    nav ul{
+        display: none;
+    }
+    .right-nav{
+        float: right;
+    }
+    .poster-sub{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    
+    }
+    .poster-sub img{
+        width: 100%;
+    }
+    
+}
+ @media only screen and (min-width:800px){
+
+    .lower-nav ul{
+        display: none;
+        gap: 1rem;
+        width: 100%;
+    }
+    
+}
+@media only screen and (max-width:700px){
+    .home{
+        width: 100%;
+        flex: 0;
+        flex-shrink: 0;
+    }
+    .game-home{
+        width: 40rem;
+    }
+    .nav{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .main{
+        width: 100%;
+        margin-right: -80rem;
+    }
+    nav{
+        width: 50rem;
+    }
+    .lower-nav{
+        width: 50rem;
+    }
+    .main{
+        width: 40rem;
+    }
+}
+@media only screen and (max-width:600px){
+    
+    .home{
+        width: 40rem;
+        flex: 0;
+        flex-shrink: 0;
+    }
+    .game-home{
+        width: 40rem;
+    }
+    .nav{
+        display: flex;
+        justify-content: space-between;
+        width: 77;
+    }
+    .footer2{
+        
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+}
+@media only screen and (max-width:500px){
+    nav{
+        width: 49rem;
+    }
+    .home{
+        width: 41rem;
+    }
+    .main{
+        width: 39rem;
+    }
+    .game-home{
+        width: 100%;
+    }
+    .sub-header-a{
+        font-size: 0.8rem;
+    }
+    .game-home{
+        width: 41rem;
+    }
+    .lower-nav{
+        width: 49rem;
+    }
+}
+@media only screen and (max-width:400px){
+    
+    nav{
+        display: flex;
+        justify-content: space-around;
+        width: 46rem;
+    }
+    .game-home{
+        width: 25rem
+    }
+    .lower-nav ul{
+        display: flex;
+        width: 35rem;
+    }
+    .footer1{
+        display: flex;
+        flex-direction: column;
+    }
+    .responsive{
+        display: flex;
+        flex-direction: row;
+        overflow-x: scroll;
+        overflow-y: hidden;
+    }
+    .lower-nav{
+        display: flex;
+        justify-content: space-around;
+        width: 44rem;
+    }
 }
 
 /* yellow section */
@@ -455,3 +791,419 @@ nav span{
 }
 
 
+.footer1{
+    display: flex;
+    justify-content: start;
+    padding: 0.7rem;
+    
+  }
+  .footer-a{
+    margin-right: 12rem;
+  }
+  .footer-p{
+    margin: 1rem 0;
+  }
+  a{
+    text-decoration: none;
+    color: #5F6368;
+    font-size: 0.9rem;
+  }
+  .footer-s{
+    color: #5F6368;
+    font-weight:600;
+  }
+  a:hover{
+    color: rgb(57, 143, 57);
+  }
+  .footer2{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.25rem;
+    margin: 0 0.6rem;
+  }
+  .footer-sub1{
+    display: flex;
+    gap: 1.25rem;
+  }
+  .footer-sub2-a{
+    display: flex;
+    flex-direction: row;
+   gap: 1.25rem;
+  }
+  .footer-sub2-a img{
+    height: 1.25rem;
+  }
+  .footer-subA a{
+    font-style: normal;
+    font-size: 0.75rem;
+    
+  }
+
+
+.lower-nav ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    gap: 20px;
+    list-style: none;
+    
+    }
+    .lower-nav{
+        position: fixed;
+        bottom: 0;
+       z-index: 9990;
+       background-color: #fff;
+       width: 80vw;
+    }
+
+
+    .container1{
+        margin-left: 17.6rem;
+    }
+
+
+@media screen and (min-width: 1655px) and (max-width: 1766px){
+    
+    .carsol-item{
+        margin: 5rem;
+    }
+    .section1 .heading h2{
+        display: flex;
+        margin-left:  -13rem;
+    }
+    .section2 .section-content .section-content2 h2 ,p {
+        margin: 0px -17rem;
+    }
+
+    .section6 .heading h2{
+        margin: 2rem -17rem;
+    }
+
+    .section2-links {
+        margin: 1rem 2rem;
+    }
+    
+    .section6 .container10{
+        margin-left: 2rem;
+    }
+
+    .heading h2{
+        margin-left: -17rem;
+    }
+    .nav-links{
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        width: 80vw;
+        margin-left: -5rem;
+    }
+    .lower-nav{
+        display: none;
+    }
+}
+
+
+@media screen and (min-width: 1456px) and (max-width: 1654px){
+    
+    .carsol-item{
+        margin: 5rem;
+    }
+    .section1 .heading h2{
+        display: flex;
+        margin-left:  -13rem;
+    }
+    .section2 .section-content .section-content2 h2 ,p {
+        margin: 0px -17rem;
+    }
+
+    .section6 .heading h2{
+        margin: 2rem -17rem;
+    }
+
+    .section2-links {
+        margin: 1rem 2rem;
+    }
+    
+    .section6 .container10{
+        margin-left: 2rem;
+    }
+
+    .heading h2{
+        margin-left: -17rem;
+    }
+    .nav-links{
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        width: 80vw;
+        margin-left: -5rem;
+    }
+}
+
+@media screen and (min-width: 1345px) and (max-width: 1454px){
+body{
+    overflow-x: hidden;
+}
+    .nav2{
+        display: inline-block;
+    }
+    .carsol-item{
+        margin: 2rem;
+    }
+    .section1 .heading h2{
+        display: flex;
+        margin-left:  -17rem;
+    }
+    .section2 .section-content .section-content2 h2 ,p {
+        margin: 0px -17rem;
+    }
+
+    .section6 .heading h2{
+        margin: 2rem -17rem;
+    }
+
+    .section2-links {
+        margin: 1rem 2rem;
+    }
+    
+    .section6 .container10{
+        margin-left: 2rem;
+    }
+
+    .heading h2{
+        margin-left: -17rem;
+    }
+    .nav-links{
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        width: 80vw;
+    }
+}
+
+
+
+@media screen and (min-width: 1201px) and (max-width: 1344px){
+
+    .nav2{
+        display: inline-block;
+    }
+    .carsol-item{
+        margin: 2rem;
+    }
+    .section1 .heading h2{
+        display: flex;
+        margin-left:  -17rem;
+    }
+    .section2 .section-content .section-content2 h2 ,p {
+        margin: 0px -17rem;
+    }
+
+    .section6 .heading h2{
+        margin: 2rem -17rem;
+    }
+
+    .section2-links {
+        margin: 1rem 2rem;
+    }
+    
+    .section6 .container10{
+        margin-left: 2rem;
+    }
+
+    .heading h2{
+        margin-left: -17rem;
+    }
+    .nav-links{
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        width: 80vw;
+    }
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1200px){
+
+    .nav{
+        width: 56rem;
+    }
+    .carsol-item{
+        margin:0rem 2rem;
+        width: 56rem;
+    }
+    .section1 .heading h2{
+        display: flex;
+        margin-left:  -17rem;
+    }
+    .section2 .section-content .section-content2 h2 ,p {
+        margin: 0px -17rem;
+    }
+
+    .section6 .heading h2{
+        margin: 2rem -17rem;
+    }
+
+    .section2-links {
+        margin: 1rem 2rem;
+    }
+    
+    .section6 .container10{
+        margin-left: 2rem;
+    }
+
+    .heading h2{
+        margin-left: -17rem;
+    }
+    .nav-links{
+        display: flex;
+        flex-wrap: wrap;
+        width: 80vw;
+    }
+    body{
+        margin-right: -10rem;
+    }
+}
+
+
+@media screen and (min-width: 866px) and (max-width: 999px){
+    .carsol-item{
+        margin: 2rem;
+    }
+    
+    .nav{
+        width: 52rem;
+    }
+
+    .container1{
+        /* position: relative;
+        left: 0; */
+        margin-left: 2rem;
+    }
+    .line{
+        margin-left: 2rem;
+    }
+
+
+    .section1 .heading h2{
+        display: flex;
+        margin-left:  -17rem;
+    }
+    .section2 .section-content .section-content2 h2 ,p {
+        margin: 0px -17rem;
+    }
+
+    .section6 .heading h2{
+        margin: 2rem -17rem;
+    }
+
+    .section2-links {
+        margin: 1rem 2rem;
+    }
+    
+    .section6 .container10{
+        margin-left: 2rem;
+    }
+
+    .heading h2{
+        margin-left: -17rem;
+    }
+    .nav-links{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100vw;
+    }
+
+    body{
+        margin-right: -10rem;
+    }
+}
+
+/* @media screen and (min-width : 865px){
+    .lower-nav{
+        display: none;
+    }
+} */
+
+
+@media screen and (min-width: 768px) and (max-width: 865px) {
+    .container1{
+        /* position: relative;
+        left: 0; */
+        margin-left: 2rem;
+    }
+    .line{
+        margin-left: 2rem;
+    }
+    
+    .nav-links{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .nav{
+        width: 50rem;
+        padding: 0rem 2rem;
+        margin: 2rem;
+    }
+
+    .carsol-item{
+        margin: 2rem;
+    }
+    .section6 .container10{
+        margin-left: 2rem;
+    }
+
+    .section1 .heading h2{
+        margin-left: -17rem;
+    }
+
+    .section2 .section-content .section-content2 h2 , p{
+        margin-left: -17rem;
+    }
+
+    .heading{
+        margin-left: 2rem;
+    }
+
+    .section6 .section2-links{
+        margin: 2rem;
+    }
+    
+
+}
+
+ 
+@media screen and (min-width: 630px) and (max-width: 767px) {
+    /* nav ul{
+        display: none;
+    } */
+    /* .carsol-item{
+        margin-left: 2rem;
+        margin-right: 2rem;
+    } */
+
+    .nav{
+        width: 56rem;
+    }
+    .carsol-item{
+        margin-left: 2rem;
+    }
+
+    .container1{
+        /* position: relative;
+        left: 0; */
+        margin-left: 2rem;
+    }
+    .line{
+        margin-left: 2rem;
+    }
+    .section1 .heading h2{
+        margin-left: -15rem;
+    }
+
+}
+/*
+@media screen and (max-width: 600px){
+    
+} */
