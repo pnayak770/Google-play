@@ -163,7 +163,9 @@ h1{
     display: inline-block;
 }
 
-
+.nav-links{
+    position: relative;
+}
 .dropdown .content{
     position: absolute;
     display: none;
@@ -213,16 +215,20 @@ h1{
 /* section 1 */
 
 .section1{
-    margin-top: 1.875rem;
+
+    margin: 1.875rem 1.5rem ;
 }
 
 
 .heading{
     display: flex;
-    margin-left: 19.2rem;
+    margin-left: 1.5rem;
     margin-top: 2rem;
 }
 
+.carsol-item1{
+    display: flex;
+}
 
 .carsol-item{
     display: flex;
@@ -230,8 +236,8 @@ h1{
     gap: 2rem;
     overflow-x: scroll;
     overflow-y: hidden;
-    border: 3px solid black;
-    margin: 20px 300px;
+    /* border: 3px solid black; */
+    margin: 0.5rem 1.5rem;
 }
 .carsol-item::-webkit-scrollbar {
     display: none;
@@ -241,7 +247,7 @@ h1{
 
 .carsol-item-stats{
     display: flex;
-    gap: 5px;
+    gap: 10px;
     
 }
 
@@ -250,8 +256,8 @@ h1{
     flex-direction:row;
 }
 .carsol-item-list{
-    border: 5px solid red;
-    width: 25rem;
+    /* border: 5px solid red; */
+    width: 13rem;
 }
 
 /* .carsol-item::-webkit-scrollbar{
@@ -263,7 +269,7 @@ h1{
     background-color: #f1efef;
 } */
 .carsol-item-list img{
-    padding: 10px;
+    padding: 20px;
     border-radius: 15px;
     object-fit: cover;
     background-size: cover;
@@ -276,7 +282,7 @@ h1{
 }
 
 .carsol-item-data{
-    padding: 9px;
+    padding: 20px;
 }
 
 .containter2{
@@ -301,10 +307,12 @@ h1{
 }
 
 /* secton6 */
+.section6{
+    margin: 1rem 1.5rem;
+}
 
 .section6 .container10{
     overflow-x: scroll;
-    margin-left: 18.4rem;
 }
 .container10::-webkit-scrollbar{
     display: none;
@@ -313,14 +321,15 @@ h1{
 
 .section2{
     margin-top: 6.25rem;
+    margin: 0.1rem 1.5rem;
 }
 
-.section-content{
-    margin-left: 19.1rem;
+.section-content2 h2 ,p{
+    margin: 0rem 1.5rem;
 }
 
 .section2-links{
-    margin-left: 20rem;
+    margin: 1rem 1.5rem;
     display: flex;
     gap: 5%;
 }
@@ -351,7 +360,7 @@ h1{
     flex-direction: row;
     overflow-y: hidden;
     overflow-x: scroll;
-    margin-left: 19.6rem;
+    width: 90vw;
 }
 
 .section2-carts1{
@@ -361,7 +370,7 @@ h1{
     gap: 3px;
     margin-bottom: 1%;
     align-items: center;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 
 .section2-carts1 .section2-carts-items{
@@ -373,7 +382,7 @@ h1{
 
 .section2-carts1 .section2-carts-list{
     display: flex;
-    gap: 3%; 
+    gap: 2%; 
     justify-content: center;
     width: 20.75rem;
     padding: 2px;
@@ -417,11 +426,15 @@ h1{
 
 /* section 4 */
 .section4-template{
-    background-image: linear-gradient(to right, rgb(41, 173, 255) 40%, rgba(41, 173, 255, 0) 80%, transparent);
-    height: 35vh;
-    margin-left: 19rem;
+    background-color: rgb(41, 173, 255);
+    height: 40vh;
+    margin-left: 1.5rem;
     margin-top: 3rem;
     border-radius: 5px;
+    
+}
+.section4-template-heading div{
+    font-size: 2.4rem;
 }
 
 .section4 .heading{
@@ -451,11 +464,12 @@ h1{
     flex-direction: column;
 }
 .line{
-    width: 69%;
+    margin-left: 20rem;
+    width: 80%;
     height: 1px;
     margin-top: 2%;
     background-color: black;
-    margin-left: 18.5rem;
+    margin-left: 0rem 0.2rem;
 }
 
 /* footer */
@@ -578,621 +592,208 @@ h1{
 }
 
 
-/* @media screen and (min-width: 480px) and (max-width: 639px){
-    .carsol-item{
-        display: flex;
-        justify-content: center;
-        gap: 0.24rem;
-        margin-left: 1rem;
-        margin-right: 1rem;
-        margin-top: 50px;
-        align-items: flex-end;
-        overflow-x: scroll ;
-        overflow-y: hidden;
-        scrollbar-width: thin;
-    }
-
-} */
-
-/* @media screen and (min-width: 640px) { 
-    .carsol-item{
-        display: flex;
-        flex-direction: row;
-        gap: 2rem;
-        overflow-x: scroll;
-        overflow-y: hidden;
-        border: 3px solid black;
-        margin: 20px 300px;
-    }
-} 
-   @media screen and (min-width: 768px) {
-    .nav-links{
-        display: flex;
-        gap: 0.6rem;
-        width: 100vw;
-        margin-top: 2rem;
-    }
-    .dropdown-heading{
-    border: 1px solid #dddfe3    ;
-    border-radius: 15px;
-    padding: 0.1em 0.25em;
-    cursor: pointer;
-        font-size:0.9rem
-    } 
-
-    .dropdown .content{
-        width:150px;
-        height:300px
-    }
-
-    .section1 .heading{
-        margin-left:3.4rem
-    }
-
-    .heading{
-        margin-left: 3.4rem;
-    }
-    .content1 div{
-        margin-left: 3.4rem;
-        margin-top: 1rem;
-        padding-top: 1rem;
-        font-size: 0.9rem;
-    }
-
-    
-    .section-content{
-        margin-left: 3.4rem;
-    }
-
-    .carsol-item-data div{
-        font-size: 1.3rem;
-    }
-
-    .carsol-item-list img{
-        padding: 10px;
-        border-radius: 15px;
-        object-fit: cover;
-        width: 100%;
-    }
-    .carsol-item-list{
-        width: 13.125rem;
-    }
-    .carsol-item{
-        display: flex;
-        flex-direction: row;
-        gap: 2rem;
-        overflow-x: scroll;
-        overflow-y: hidden;
-        border: 3px solid black;
-        margin: 20px 300px;
-    }
-    .container10{
-        margin-left: 2rem;
-    }
-    .section6 .heading h2{
-        margin-left: 2rem;
-    }
-} */
-
-/* @media screen and (min-width: 1024px) and (max-width: 1360px) {
-
-    .nav-links{
-        display: flex;
-        justify-content: center;
-        gap: 1rem;
-        width: 70vw;
-        margin-top: 2rem;
-        margin-left: rem;
-    }
-    .dropdown-heading{
-    border: 1px solid #dddfe3    ;
-    border-radius: 15px;
-    padding: 0.1em 1.25em;
-    cursor: pointer;
-        font-size:0.9rem
-    } 
-
-    .dropdown .content{
-        width:150px;
-        height:300px
-    }
-
-    .section1 .heading{
-        margin-left:3.4rem
-    }
-
-    .heading{
-        margin-left: 3.4rem;
-    }
-    .content1 div{
-        margin-left: 3.4rem;
-        margin-top: 1rem;
-        padding-top: 1rem;
-        font-size: 0.9rem;
-    }
-
-    
-    .section-content{
-        margin-left: 3.4rem;
-    }
-
-    .carsol-item-data div{
-        font-size: 1.3rem;
-    }
-
-    .carsol-item-list img{
-        padding: 10px;
-        border-radius: 15px;
-        object-fit: cover;
-        width: 100%;
-    }
-    .carsol-item-list{
-        width: 13.125rem;
-    }
-    .carsol-item{
-        display: flex;
-        justify-content: center;
-        gap: 0.24rem;
-        margin-left: 3rem;
-        margin-right: 3rem;
-        margin-top: 50px;
-        align-items: flex-end;
-        overflow-x: scroll ;
-        overflow-y: hidden;
-        scrollbar-width: thin;
-    }
-
-
-    .footer{
-    margin-left: 3.4rem;
-    margin-right: 3.4rem;
-    margin-top: 2rem;
-}
-.footer .footer1{
-    margin-top: 3rem;
+.footer1{
     display: flex;
-    gap: 20%;
-}
-
-.footer2{
+    justify-content: start;
+    padding: 0.7rem;
+    
+  }
+  .footer-a{
+    margin-right: 12rem;
+  }
+  .footer-p{
+    margin: 1rem 0;
+  }
+  a{
+    text-decoration: none;
+    color: #5F6368;
+    font-size: 0.9rem;
+  }
+  .footer-s{
+    color: #5F6368;
+    font-weight:600;
+  }
+  a:hover{
+    color: rgb(57, 143, 57);
+  }
+  .footer2{
     display: flex;
     justify-content: space-between;
-    margin-top: 2%;
-}
-.footer2-content{
+    margin-top: 1.25rem;
+    margin: 0 0.6rem;
+  }
+  .footer-sub1{
     display: flex;
-    gap: 5%;
-    font-size: 13px;
-}
+    gap: 1.25rem;
+  }
+  .footer-sub2-a{
+    display: flex;
+    flex-direction: row;
+   gap: 1.25rem;
+  }
+  .footer-sub2-a img{
+    height: 1.25rem;
+  }
+  .footer-subA a{
+    font-style: normal;
+    font-size: 0.75rem;
+    
+  }
 
-.footer2-content{
-    margin-bottom: 2%;
-}
-.footer2-content img{
-    width: 23px;
-}
-    .line{
-        margin-left: 3.4rem;
-        width: 90%;
-        margin-right:3.4rem; 
+
+.lower-nav ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    gap: 20px;
+    list-style: none;
+    
     }
-} */
+    .lower-nav{
+        position: fixed;
+        bottom: 0;
+       z-index: 9990;
+       background-color: #fff;
+       width: 80vw;
+    }
 
-/* @media screen and (min-width: 1361px) and (max-width: 1480px){
 
+    .container1{
+        margin-left: 1.5rem;
+    }
+
+
+@media screen and (min-width: 1655px) and (max-width: 1766px){
+    
+    .carsol-item{
+        margin: 5rem;
+
+    }
+    .section1 .heading h2{
+        display: flex;
+        margin-left:  -13rem;
+    }
+    .section2 .section-content .section-content2 h2 ,p {
+        margin: 0px -17rem;
+    }
+
+    .section6 .heading h2{
+        margin: 2rem -17rem;
+    }
+
+    .section2-links {
+        margin: 1rem 2rem;
+    }
+    
+    .section6 .container10{
+        margin-left: 2rem;
+    }
+
+    .heading h2{
+        margin-left: -17rem;
+    }
     .nav-links{
         display: flex;
+        flex-wrap: nowrap;
         justify-content: center;
-        gap: 0.5rem;
-        flex-wrap: wrap;
-        width: 75vw;
-        margin-top: 2rem;
+        width: 80vw;
+        margin-left: -5rem;
     }
-    
-    .open-in-new{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 0.2rem;
-    }
-    .open-in-new-list{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 0.13rem 1.25rem;
-    }
-    
-    .open-in-new:hover{
-        background-color: var(--light-grey);
-        cursor: pointer;
-        border: 1px ;
-        border-radius: 15px;
-    }
-
-
-    
-    .dropdown-heading{
-        border: 1px solid #dddfe3    ;
-        border-radius: 15px;
-        padding: 0.3em 1.25em;
-        cursor: pointer;
-    }
-    
-    #material-icon{
-        font-size: 1.2rem;
-    }
-    
-    
-    
-    .dropdown{
-        position: relative;
-        display: inline-block;
-    }
-    
-    
-    .dropdown .content{
-        position: absolute;
-        display: none;
-        z-index: 1;
-        background-color: white;
-        overflow-y: scroll;
-        width: 200px;
-        max-height: 400px;
-        padding: 20px 30px ;
-        box-shadow: 0px -25px 20px -20px rgba(0,0,0,0.45),
-        25px 0px 20px -20px rgba(0,0,0,0.45),
-        0px 25px 20px -20px rgba(0,0,0,0.45),
-        -25px 0px 20px -20px rgba(0,0,0,0.45);
-    }
-    
-    .content a{
-        display: block;
-        text-decoration: none;
-        color: black;
-        padding: 10px 2px;
-        font-size: 14px;
-    }
-    
-    .dropdown:hover .content{
-        display: block;
-    }
-    .content a:hover{
-        background-color: #f1f1f1;
-    }
-    
-    .dropdown:hover{
-        display: block;
-    }
-    
-    .dropdown .content::-webkit-scrollbar{
+    .lower-nav{
         display: none;
     }
+}
+
+
+@media screen and (min-width: 1456px) and (max-width: 1654px){
     
-    .nav-links .dropdown:hover{
-        background-color: var(--light-grey);
-        border-radius: 25px;
+    .carsol-item{
+        margin: 5rem;
+    }
+    .section1 .heading h2{
+        display: flex;
+        margin-left:  -13rem;
+    }
+    .section2 .section-content .section-content2 h2 ,p {
+        margin: 0px -17rem;
+    }
+
+    .section6 .heading h2{
+        margin: 2rem -17rem;
+    }
+
+    .section2-links {
+        margin: 1rem 2rem;
     }
     
-    
-    
-    
-   
-    
-    .section1{
-        margin-top: 1.875rem;
+    .section6 .container10{
+        margin-left: 2rem;
+    }
+
+    .heading h2{
+        margin-left: -17rem;
+    }
+    .nav-links{
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        width: 80vw;
+        margin-left: -5rem;
+    }
+}
+
+@media screen and (min-width: 1345px) and (max-width: 1454px){
+
+    .row{
+        width: 80vw;
+        margin-left: 0rem;
+    }
+    .nav{
+        width: 63rem;
+    }
+    .nav2{
+        width: 20vw;
     }
     
     .section1 .heading h2{
-        margin-left:3.4rem;
-    }
-    .heading{
         display: flex;
-        margin-left: 19.2rem;
-        margin-top: 2rem;
+        margin-left:  -17rem;
     }
-    
-    
-    
-    .carsol-item{
-        display: flex;
-        justify-content: center;
-        gap: 0.24rem;
-        margin-left: 6rem;
-        margin-right: 6rem;
-        margin-top: 50px;
-        align-items: flex-end;
-        overflow-x: scroll ;
-        overflow-y: hidden;
-        scrollbar-width: thin;
-    }
-    .ccarsol-item::-webkit-scrollbar{
-        width: 10px;
-    }
-    
-    .carsol-item-stats{
-        display: flex;
-        gap: 5px;
-    
-    }
-    
-    .carsol-item-list{
-        width: 13.125rem;
-    }
-    
-    .carsol-item-list img{
-        padding: 10px;
-        border-radius: 15px;
-        object-fit: cover;
-        width: 100%;
-    }
-    
-    .carsol-item-list:hover{
-        background-color: var(--light-grey);
-        cursor: pointer;
-        border-radius: 5px;
-    }
-    
-    .carsol-item-data{
-        padding: 9px;
-    }
-    
-    .containter2{
-        background-color: var(--light-yellow);
-        height: 50vh;
-        position: relative;
-        margin-top: 5%;
-        width: 100%;
-    }
-    
-    
-    .bg-img img{
-        position: absolute;
-        width: 700px;
-        height: 400px;
-        left: 350px;
-        bottom:0px;
-        box-shadow: -10px 0px 14px 0px var(--light-yellow) ;
-    }
-    .containter2 .content div{
-        margin-left: 18.4rem;
-    }
-    
-    /* section2 */
-    
-    /* .section2{
-        margin-top: 6.25rem;
-    }
-    
-    .section-content{
-        margin-left: 19.1rem;
-    }
-    
-    .section2-links{
-        margin-left: 20rem;
-        display: flex;
-        gap: 5%;
-    }
-    
-    .section2-links-items{
-        border: 1px solid grey;
-        border-radius: 15px;
-        padding: 4px 20px;
-        cursor: pointer;
-        margin-bottom: 2%;
-    }
-    
-    .section2-links-items a{
-        text-decoration: none;
-        color: black;
-    }
-    
-    .section2-carts-list img{
-        border-radius: 5px;
-    }
-    
-    .section2-links-items:hover{
-        background-color: #f1f1f1;
-    }
-    
-    .section2-carts1{
-        display: flex;
-        margin-left: 19.6rem;
-        gap: 100px;
-        margin-bottom: 1%;
-        align-items: center;
-    }
-    
-    .section2-carts1 .section2-carts-items{
-        display: flex;
-        gap: 2%;
-        padding: 1rem 1.2rem;
-    }
-    
-    .section2-carts1 .section2-carts-list{
-        display: flex;
-        gap: 3%; 
-        justify-content: center;
-        width: 18.75rem;
-        padding: 2px;
-    }
-    
-    
-    .section2-carts-stats{
-        display: flex;
-        flex-direction: column;
-        gap: 2%;
-    }
-    
-    .section2-carts-items:hover{
-        background-color: var(--light-grey);
-        border-radius: 5px;
-        
-        cursor: pointer;    
-    } 
-    
-    .index{
-        display: flex;
-        margin-top: 3rem;
-    }
-    
-    .section2 .heading h2{
-        margin-bottom: 3rem;
-    }
-    
-    
-    .section3{
-        margin-top: 3%;
-        height: 50vh;
-        background-color: var(--light-pink);
+    .section2 .section-content .section-content2 h2 ,p {
+        margin: 0px -17rem;
     }
 
-    .section4-template{
-        background-image: linear-gradient(to right, rgb(41, 173, 255) 40%, rgba(41, 173, 255, 0) 80%, transparent);
-        height: 35vh;
-        margin-left: 19rem;
-        margin-top: 3rem;
-        border-radius: 5px;
-    }
-    
-    .section4 .heading{
-        display: flex;
-        flex-direction: column;
-    }
-    .section4-template img{
-        position: absolute;
-        right: 300px;
-        height: 35%;
-        border-top-right-radius: 5px;
-        border-bottom-right-radius: 5px ;
-        background-size: cover;
-        background-attachment: fixed;
-        background-position: center;
-    }
-    
-    .section4-template-heading{
-        display: flex;
-        flex-direction: column;
-        padding-top: 9%;
-        font-size: 25px;
-        padding-left: 4%;
-    }
-    .heading{
-        display: flex;
-        flex-direction: column;
-    }
-    .line{
-        width: 69%;
-        height: 1px;
-        margin-top: 2%;
-        background-color: black;
-        margin-left: 18.5rem;
+    .section6 .heading h2{
+        margin: 2rem -17rem;
     }
 
-    
-    .footer{
-        margin-left: 18.5%;
-        margin-right: 18.5%;
-        margin-top: 2%;
-    }
-    .footer .footer1{
-        margin-top: 2%;
-        display: flex;
-        gap: 20%;
+    .section2-links {
+        margin: 1rem 2rem;
     }
     
-    .footer2{
-        display: flex;
-        justify-content: space-between;
-        margin-top: 2%;
+    .section6 .container10{
+        margin-left: 2rem;
     }
-    .footer2-content{
-        display: flex;
-        gap: 5%;
-        font-size: 13px;
-    }
-    
-    .footer2-content{
-        margin-bottom: 2%;
-    }
-    .footer2-content img{
-        width: 23px;
-    } */
 
-
-/* @media screen and (min-width: 1768px) {
+    .heading h2{
+        margin-left: -17rem;
+    }
     .nav-links{
         display: flex;
+        flex-wrap: nowrap;
         justify-content: center;
-        gap: 0.6rem;
-        width: 78vw;
-        margin-top: 2rem;
+        width: 80vw;
     }
-    .dropdown-heading{
-    border: 1px solid #dddfe3    ;
-    border-radius: 15px;
-    padding: 0.1em 0.25em;
-    cursor: pointer;
-        font-size:1.3rem
-    } 
+}
 
-    .dropdown .content{
-        width:150px;
-        height:300px
-    }
 
-    .section1 .heading{
-        margin-left: 20rem;
-    }
 
-    .heading{
-        margin-left: 20rem;
-    }
-    .content1 div{
-        margin-left: 20rem;
-        margin-top: 1rem;
-        padding-top: 1rem;
-        font-size: 0.9rem;
-    }
+@media screen and (min-width: 1201px) and (max-width: 1344px){
 
-  
-    .section-content{
-        margin-left: 20rem;
+    .nav2{
+        display: inline-block;
     }
-
-    .carsol-item-data div{
-        font-size: 1.3rem;
-    }
-
-    .carsol-item-list img{
-        padding: 10px;
-        border-radius: 15px;
-        object-fit: cover;
-        width: 100%;
-    }
-    .carsol-item-list{
-        width: 13.125rem;
-    }
-    .carsol-item{
-        display: flex;
-        justify-content: center;
-        gap: 0.24rem;
-        margin-left: 3rem;
-        margin-right: 3rem;
-        margin-top: 50px;
-        align-items: flex-end;
-    }
-    .carsol{
-        display: flex;
-        flex-direction: row;
-        overflow-x: scroll;
-    }
-} */
-
-/* @media screen and (min-width: 1768px){
-    
-} */
-
-@media screen and (max-width: 1200px){
     .carsol-item{
         margin: 2rem;
     }
@@ -1222,22 +823,193 @@ h1{
     .nav-links{
         display: flex;
         flex-wrap: nowrap;
-        width: 100vw;
+        justify-content: center;
+        width: 80vw;
     }
 }
 
-@media screen and (max-width: 865px) {
+@media screen and (min-width: 1000px) and (max-width: 1200px){
+
+    .section4-template{
+        width: 55.9rem;;
+    }
+    .section3{
+        width: 60rem;
+    }
+    .nav{
+        width: 56rem;
+    }
+    .carsol-item{
+        margin:0rem 2rem;
+        width: 56rem;
+    }
+    .section1 .heading h2{
+        display: flex;
+        margin-left:  -17rem;
+    }
+    .section2 .section-content .section-content2 h2 ,p {
+        margin: 0px -17rem;
+    }
+
+    .section6 .heading h2{
+        margin: 2rem -17rem;
+    }
+
+    .section2-links {
+        margin: 1rem 2rem;
+    }
+    
+    .section6 .container10{
+        margin-left: 2rem;
+    }
+
+    .heading h2{
+        margin-left: -17rem;
+    }
+    .nav-links{
+        display: flex;
+        flex-wrap: wrap;
+        width: 80vw;
+    }
+    body{
+        margin-right: -10rem;
+    }
+}
+
+
+@media screen and (min-width: 866px) and (max-width: 999px){
+    .carsol-item{
+        margin: 2rem;
+    }
+    
+    .nav{
+        width: 52rem;
+    }
+
+    .container1{
+        /* position: relative;
+        left: 0; */
+        margin-left: 2rem;
+    }
+    .line{
+        margin-left: 2rem;
+    }
+
+
+    .section1 .heading h2{
+        display: flex;
+        margin-left:  -17rem;
+    }
+    .section2 .section-content .section-content2 h2 ,p {
+        margin: 0px -17rem;
+    }
+
+    .section6 .heading h2{
+        margin: 2rem -17rem;
+    }
+
+    .section2-links {
+        margin: 1rem 2rem;
+    }
+    
+    .section6 .container10{
+        margin-left: 2rem;
+    }
+
+    .heading h2{
+        margin-left: -17rem;
+    }
+    .nav-links{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100vw;
+    }
+
+}
+
+/* @media screen and (min-width : 865px){
+    .lower-nav{
+        display: none;
+    }
+} */
+
+
+@media screen and (min-width: 768px) and (max-width: 865px) {
+    .container1{
+        /* position: relative;
+        left: 0; */
+        margin-left: 2rem;
+    }
+    .line{
+        margin-left: 2rem;
+    }
+    
     .nav-links{
         display: flex;
         flex-wrap: wrap;
     }
-    .nav .left-nav{
-        display: none;
+    
+    .nav{
+        width: 50rem;
+        padding: 0rem 2rem;
+        margin: 2rem;
     }
+
+    .carsol-item{
+        margin: 2rem;
+    }
+    .section6 .container10{
+        margin-left: 2rem;
+    }
+
+    .section1 .heading h2{
+        margin-left: -17rem;
+    }
+
+    .section2 .section-content .section-content2 h2 , p{
+        margin-left: -17rem;
+    }
+
+    .heading{
+        margin-left: 2rem;
+    }
+
+    .section6 .section2-links{
+        margin: 2rem;
+    }
+    
+
 }
 
- @media screen and (max-width: 768px) {
-    
+ 
+@media screen and (min-width: 630px) and (max-width: 767px) {
+    /* nav ul{
+        display: none;
+    } */
+    /* .carsol-item{
+        margin-left: 2rem;
+        margin-right: 2rem;
+    } */
+
+    .nav{
+        width: 56rem;
+    }
+    .carsol-item{
+        margin-left: 2rem;
+    }
+
+    .container1{
+        /* position: relative;
+        left: 0; */
+        margin-left: 2rem;
+    }
+    .line{
+        margin-left: 2rem;
+    }
+    .section1 .heading h2{
+        margin-left: -15rem;
+    }
+
 }
 /*
 @media screen and (max-width: 600px){
