@@ -375,7 +375,7 @@ header{
     
   }
   .footer-a{
-    margin-right: 12.rem;
+    margin-right: 12rem;
   }
   .footer-p{
     margin: 1rem 0;
@@ -416,7 +416,7 @@ header{
     
   }
 
-.poster{
+/* .poster{
     display: flex;
     flex-direction: row;
     border-radius: 6.25rem;
@@ -445,11 +445,28 @@ header{
 }
 .poster-sub img{
 border-radius: 0.62rem;
-}
-.extra{
+}*/
+/* .extra{
     font-size: 1rem;
+}  */
+.lower-nav ul{
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: space-around;
+gap: 20px;
+list-style: none;
 }
-@media screen and (max-width:768px) {
+.lower-nav{
+    position: sticky;
+    bottom: 0;
+   z-index: 999;
+   background-color: #fff;
+}
+@media only screen and (max-width:800px) {
+    .home{
+        width: 90%;
+    }
     nav ul{
         display: none;
     }
@@ -458,9 +475,125 @@ border-radius: 0.62rem;
     }
     .poster-sub{
         display: flex;
-        flex-direction: column-reverse;
+        flex-direction: column;
         width: 100%;
     
     }
+    .poster-sub img{
+        width: 100%;
+    }
+    
+}
+ @media only screen and (min-width:800px){
 
+    .lower-nav ul{
+        display: none;
+        gap: 1rem;
+        width: 100%;
+    }
+    
+}
+@media only screen and (max-width:700px){
+    .home{
+        width: 100%;
+        flex: 0;
+        flex-shrink: 0;
+    }
+    .game-home{
+        width: 40rem;
+    }
+    .nav{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .main{
+        width: 100%;
+        margin-right: -80rem;
+    }
+    nav{
+        width: 50rem;
+    }
+    .lower-nav{
+        width: 50rem;
+    }
+    .main{
+        width: 40rem;
+    }
+}
+@media only screen and (max-width:600px){
+    
+    .home{
+        width: 40rem;
+        flex: 0;
+        flex-shrink: 0;
+    }
+    .game-home{
+        width: 40rem;
+    }
+    .nav{
+        display: flex;
+        justify-content: space-between;
+        width: 77;
+    }
+    .footer2{
+        
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+}
+@media only screen and (max-width:500px){
+    nav{
+        width: 49rem;
+    }
+    .home{
+        width: 41rem;
+    }
+    .main{
+        width: 39rem;
+    }
+    .game-home{
+        width: 100%;
+    }
+    .sub-header-a{
+        font-size: 0.8rem;
+    }
+    .game-home{
+        width: 41rem;
+    }
+    .lower-nav{
+        width: 49rem;
+    }
+}
+@media only screen and (max-width:400px){
+    
+    nav{
+        display: flex;
+        justify-content: space-around;
+        width: 46rem;
+    }
+    .game-home{
+        width: 25rem
+    }
+    .lower-nav ul{
+        display: flex;
+        width: 35rem;
+    }
+    .footer1{
+        display: flex;
+        flex-direction: column;
+    }
+    .responsive{
+        display: flex;
+        flex-direction: row;
+        overflow-x: scroll;
+        overflow-y: hidden;
+    }
+    .lower-nav{
+        display: flex;
+        justify-content: space-around;
+        width: 44rem;
+    }
 }
