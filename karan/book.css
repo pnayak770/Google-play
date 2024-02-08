@@ -669,7 +669,15 @@ nav span{
 
 
 @media screen and (min-width: 1456px) and (max-width: 1654px){
+    .left-nav span{
+        font-size: 1.3rem;
+        color: var(--grey);
+    }
     
+    .left-nav ul a{
+        font-size: 1rem;
+    }
+
     .carsol-item{
         margin: 5rem;
     }
@@ -707,6 +715,15 @@ nav span{
 
 @media screen and (min-width: 1345px) and (max-width: 1454px){
 
+    hr{
+        width: 82rem;
+    }
+    .footer-sub2{
+        margin-right: 6rem;
+    }
+    .section4-template{
+        width: 82rem;
+    }
     .left-nav span{
         font-size: 1.3rem;
         color: var(--grey);
@@ -716,7 +733,7 @@ nav span{
         font-size: 1rem;
     }
     .row{
-        width: 96vw;
+        width: 92vw;
         margin-left: 0rem;
     }
     .nav{
@@ -730,9 +747,14 @@ nav span{
         display: flex;
         margin-left:  1rem;
     }
-    .section2 .section-content .section-content2 h2 ,p {
-        margin: 0px 1rem;
+    .section2 .section-content .section-content2 h2 {
+        margin-left: 2rem;
     }
+
+    .section2 .section-content .section-content2 p {
+        margin: 0.5rem 2rem;
+    }
+
 
     .section6 .heading h2{
         margin: 2rem 1rem;
@@ -754,6 +776,22 @@ nav span{
         flex-wrap: nowrap;
         justify-content: center;
         width: 80vw;
+    }
+    .carsol .carsol-item{
+        margin:0rem 1rem;
+        width: 84rem;
+    }
+
+    .carsol-item{
+        width: 84rem;
+        margin-right: 0;
+    }
+    .container10{
+        display: flex;
+        flex-direction: row;
+        overflow-y: hidden;
+        overflow-x: scroll;
+        width: 85vw;
     }
 }
 
@@ -779,23 +817,20 @@ nav span{
     }
 
     .carsol .carsol-item{
-        margin:0rem 2rem;
-        width: 82rem;
+        margin:0rem 1rem;
+        width: 74rem;
     }
 
     .carsol-item{
-        
-        width: 85rem;
+        width: 74rem;
         margin-right: 0;
     }
 
-    nav{
-        width: 90rem;
-    }
+    
     .row .carsol-item{
         width: 100rem;
-        margin-left: 2rem;
-        margin-right: -7rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
     }
     .nav2{
         display: inline-block;
@@ -806,8 +841,9 @@ nav span{
         margin-left:  1rem;
     }
     .section2 .section-content .section-content2 h2 ,p {
-        margin: 0px 1rem;
+        margin-left:  2rem 2rem;
     }
+    
 
     
     .section6 .heading h2{
@@ -839,6 +875,7 @@ nav span{
         color: var(--grey);
     }
     
+
     .left-nav ul a{
         font-size: 0.9rem;
     }
@@ -875,7 +912,7 @@ nav span{
         width: 60rem;
     }
     .nav{
-        width: 74rem;
+        width: 71rem;
     }
     .carsol .carsol-item{
         margin:0rem 2rem;
