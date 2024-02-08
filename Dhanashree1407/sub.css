@@ -142,6 +142,10 @@ nav span{
   justify-content: center;
   align-items: center;
 }
+a{
+  text-decoration: none;
+  color: black;
+}
 .btn
 {
   width:145px;
