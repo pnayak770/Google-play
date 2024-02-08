@@ -3,7 +3,7 @@
 ### Welcome to the Google Play Store Website Clone! This project is a replica of the Google Play Store website, developed using HTML, CSS. In this README, you'll find all the information about this project.
 ---
 
-## Hosted Link: [Click Here]()
+## Hosted Link: [Click Here](https://pnayak770.github.io/Google-play/)
 ---
 
 ## Table of Contents:-
