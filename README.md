@@ -3,7 +3,7 @@
 ### Welcome to the Google Play Store Website Clone! This project is a replica of the Google Play Store website, developed using HTML, CSS. In this README, you'll find all the information about this project.
 ---
 
-## Hosted Link: [Click Here]()
+## Hosted Link: [Click Here](https://pnayak770.github.io/Google-play/)
 ---
 
 ## Table of Contents:-
@@ -111,25 +111,22 @@ This involved adjusting styles and optimizing code to ensure a cohesive user exp
 ## License:
 - This project is licensed under the [Geekster](LICENSE).
 - You are free to use and modify this code for your own purposes.
+
+<img src="https://raw.githubusercontent.com/pnayak770/Google-play/main/Assets/google_logo-removebg-preview.png" width=20% height=20% >
   
-  ![Untitled (2)](https://github.com/ayushagrawal2806/Bharat-Petroleum/blob/main/bpcl_logo_1.jpg)
 ---
 
 ## Website UI Explanation
 
 **1. Home Page UI**
 
-![Screenshot 2023-12-06 182718](https://github.com/ayushagrawal2806/Bharat-Petroleum/assets/149095832/321e4880-b307-417c-bc22-a9242b167731)
+![Screenshot 202024-02-08 115126](https://raw.githubusercontent.com/pnayak770/Google-play/main/Assets/Screenshot%202024-02-08%20115126.png)
 
-![Screenshot 2023-12-06 182735](https://github.com/ayushagrawal2806/Bharat-Petroleum/assets/149095832/17f268bd-fe60-46b7-9366-253460149846)
+![Screenshot 2024-02-08 121845](https://raw.githubusercontent.com/pnayak770/Google-play/main/Assets/Screenshot%202024-02-08%20121845.png)
 
-![Screenshot 2023-12-06 182746](https://github.com/ayushagrawal2806/Bharat-Petroleum/assets/149095832/558bd28e-a282-43ab-8d9b-b9ab06d2dbaa)
+![Screenshot 2023-12-06 182810](https://raw.githubusercontent.com/pnayak770/Google-play/main/Assets/Screenshot%202024-02-08%20122047.png)
 
-![Screenshot 2023-12-06 182758](https://github.com/ayushagrawal2806/Bharat-Petroleum/assets/149095832/88c4d019-86a5-405d-b70e-21625b1163c5)
-
-![Screenshot 2023-12-06 182810](https://github.com/ayushagrawal2806/Bharat-Petroleum/assets/149095832/9f8b7b8b-1058-44e8-93c8-8400cd088d32)
-
-![Screenshot 2023-12-06 182823](https://github.com/ayushagrawal2806/Bharat-Petroleum/assets/149095832/ca77cb53-9440-4e00-8e5d-fab07b277d64)
+![Screenshot 2024-02-08 122127](https://raw.githubusercontent.com/pnayak770/Google-play/main/Assets/Screenshot%202024-02-08%20122127.png)
 
 ***UI Description: The Google Play Store Clone faithfully replicates the design and functionality of the original Google Play Store. Users can seamlessly explore, discover, and download a diverse range of digital content, including apps, games, movies, and books. With its intuitive interface and robust features, the clone offers a familiar and engaging experience akin to the authentic platform.***
 

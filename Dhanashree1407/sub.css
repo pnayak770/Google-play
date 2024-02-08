@@ -146,6 +146,9 @@ a{
   text-decoration: none;
   color: black;
 }
+a:hover{
+  color: rgb(57, 143, 57);
+}
 .btn
 {
   width:145px;
@@ -282,6 +285,7 @@ div .info {
   }
 }
  */
+ 
 @media screen and (min-width:1318px) {
   .icon img{
     margin-top: 2rem;

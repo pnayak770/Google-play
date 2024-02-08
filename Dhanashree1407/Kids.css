@@ -8,7 +8,14 @@
   }
   a{
     text-decoration: none;
-    color: black;
+    color: rgb(95, 99, 104);;
+  }
+  .btn a{
+    color: black
+
+  }
+  a:hover{
+    color: rgb(57, 143, 57);
   }
   nav{
     background-color: #fff;
@@ -36,11 +43,12 @@ nav .left-nav{
     padding-left: 1rem;
 }
 nav ul{
-  
+    color: rgb(95, 99, 104);
     display: flex;
     list-style: none;
 }
 nav ul li{
+    
     padding: 1rem;
     font-size: 0.9rem;
 }
@@ -79,8 +87,8 @@ nav span{
     border-radius: 50px;
     margin:10px;
     background-color: transparent;
-    border: 1px solid rgb(173, 173, 173);
-    font-size: 0.9rem;
+    border: 1px solid rgb(126, 125, 125);
+    font-size: 1rem;
     color:rgb(77, 77, 77)
 }
 .age-groups .btn-1{
@@ -479,7 +487,23 @@ div .info {
     width:1.438rem;
 }
 
-@media screen and (max-width:1318px){
+
+
+/* Media query starts here */
+
+@media screen and (max-width:2472) {
+    .sec-b .pic-1 .img-2 img {
+        height: 20vh;
+        width: 170%;
+        background-size: cover;
+    }
+    .sec9 .pic .img-1 img {
+        height: 58vh;
+        width: 170%;
+        background-size: cover;
+    }
+}
+@media screen and (min-width:1318px) and (max-width:2472) {
     .sec-b .pic-1 .img-2 img {
         height: 53vh;
         width: 170%;
@@ -492,14 +516,14 @@ div .info {
     }
 }
 
-@media screen and (min-width:992px) and (max-width:1200px){
+@media screen and (min-width:992px) and (max-width:1318px){
     .sec-b .pic-1 .img-2 img {
-        height: 58vh;
+        height: 54vh;
         width: 170%;
         background-size: cover;
     }
     .sec9 .pic .img-1 img {
-        height: 58vh;
+        height: 54vh;
         width: 170%;
         background-size: cover;
     }
