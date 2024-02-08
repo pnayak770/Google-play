@@ -500,14 +500,29 @@ div .info {
     }
 }
 
-@media screen and (min-width:992px) and (max-width:1200px){
+/* Media query starts here */
+
+@media screen and (max-width:2472) {
     .sec-b .pic-1 .img-2 img {
-        height: 58vh;
+        height: 20vh;
         width: 170%;
         background-size: cover;
     }
     .sec9 .pic .img-1 img {
         height: 58vh;
+        width: 170%;
+        background-size: cover;
+    }
+}
+
+@media screen and (min-width:992px) and (max-width:2472px){
+    .sec-b .pic-1 .img-2 img {
+        height: 54vh;
+        width: 170%;
+        background-size: cover;
+    }
+    .sec9 .pic .img-1 img {
+        height: 54vh;
         width: 170%;
         background-size: cover;
     }
