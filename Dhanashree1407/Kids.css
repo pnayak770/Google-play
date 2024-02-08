@@ -10,6 +10,10 @@
     text-decoration: none;
     color: rgb(95, 99, 104);;
   }
+  .btn a{
+    color: black
+
+  }
   a:hover{
     color: rgb(57, 143, 57);
   }
@@ -83,8 +87,8 @@ nav span{
     border-radius: 50px;
     margin:10px;
     background-color: transparent;
-    border: 1px solid rgb(173, 173, 173);
-    font-size: 0.9rem;
+    border: 1px solid rgb(77, 77, 77);
+    font-size: 1rem;
     color:rgb(77, 77, 77)
 }
 .age-groups .btn-1{
