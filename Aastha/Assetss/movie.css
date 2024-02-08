@@ -557,13 +557,15 @@ list-style: none;
    background-color: #fff;
 }
 @media only screen and (max-width:800px) {
-    .home{
+    /* .home{
         width: 90%;
-    }
-    nav ul{
-        display: none;
-    }
-    .right-nav{
+    } */
+     .nav {
+
+        width: 20rem;
+        justify-content: center;
+    } 
+    /* .right-nav{
         float: right;
     }
     .poster-sub{
@@ -574,7 +576,7 @@ list-style: none;
     }
     .poster-sub img{
         width: 100%;
-    }
+    } */
     
 }
  @media only screen and (min-width:800px){
@@ -584,7 +586,15 @@ list-style: none;
         gap: 1rem;
         width: 100%;
     }
-    
+    .row{
+        width: 120rem;
+    }
+    .carsol-item{
+        margin-right: 240rem;
+    }
+    .section2 .carsol-item{
+       width: 120rem;
+    }
 }
 @media only screen and (max-width:700px){
     .home{
