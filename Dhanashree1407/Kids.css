@@ -8,7 +8,10 @@
   }
   a{
     text-decoration: none;
-    color: black;
+    color: rgb(95, 99, 104);;
+  }
+  a:hover{
+    color: rgb(57, 143, 57);
   }
   nav{
     background-color: #fff;
@@ -36,11 +39,12 @@ nav .left-nav{
     padding-left: 1rem;
 }
 nav ul{
-  
+    color: rgb(95, 99, 104);
     display: flex;
     list-style: none;
 }
 nav ul li{
+    
     padding: 1rem;
     font-size: 0.9rem;
 }
