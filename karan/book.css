@@ -24,7 +24,14 @@ nav{
     z-index: 1;
     top: 0;
 }
+.left-nav span{
+    font-size: 1.8rem;
+    color: var(--grey);
+}
 
+.left-nav ul a{
+    font-size: 1.2rem;
+}
 .nav{
     display: flex;
     justify-content: space-between;
@@ -220,21 +227,12 @@ nav span{
     flex-direction:row;
 }
 .carsol-item-list{
-    /* border: 5px solid red; */
     width: 13rem;
 }
 
-/* .carsol-item::-webkit-scrollbar{
-    height : 2px;
-    width: 10px;
-}
-
-.carsol-item::-webkit-scrollbar-thumb{
-    background-color: #f1efef;
-} */
 .carsol-item-list img{
     padding: 20px;
-    border-radius: 15px;
+    border-radius: 25px;
     object-fit: cover;
     background-size: cover;
 }
@@ -246,7 +244,8 @@ nav span{
 }
 
 .carsol-item-data{
-    padding: 20px;
+    padding-left: 20px;
+    padding-bottom: 10px;
 }
 
 .containter2{
@@ -714,7 +713,7 @@ nav span{
         margin-left: 0rem;
     }
     .nav{
-        width: 83rem;
+        width: 86rem;
     }
     .nav2{
         width: 20vw;
