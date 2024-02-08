@@ -631,7 +631,6 @@ nav span{
     
     .carsol-item{
         margin: 5rem;
-
     }
     .section1 .heading h2{
         display: flex;
@@ -708,6 +707,14 @@ nav span{
 
 @media screen and (min-width: 1345px) and (max-width: 1454px){
 
+    .left-nav span{
+        font-size: 1.3rem;
+        color: var(--grey);
+    }
+    
+    .left-nav ul a{
+        font-size: 1rem;
+    }
     .row{
         width: 96vw;
         margin-left: 0rem;
@@ -754,6 +761,14 @@ nav span{
 
 @media screen and (min-width: 1201px) and (max-width: 1344px){
 
+    .left-nav span{
+        font-size: 1.3rem;
+        color: var(--grey);
+    }
+    
+    .left-nav ul a{
+        font-size: 1rem;
+    }
 
     .container10{
         display: flex;
@@ -819,9 +834,16 @@ nav span{
 }
 
 @media screen and (min-width: 1000px) and (max-width: 1200px){
+    .left-nav span{
+        font-size: 1.2rem;
+        color: var(--grey);
+    }
+    
+    .left-nav ul a{
+        font-size: 0.9rem;
+    }
 
     .carsol-item{
-        margin-left: ;
         width: 68rem;
         margin-right: 0;
     }
@@ -892,6 +914,14 @@ nav span{
 
 
 @media screen and (min-width: 866px) and (max-width: 999px){
+    .left-nav span{
+        font-size: 1.2rem;
+        color: var(--grey);
+    }
+    
+    .left-nav ul a{
+        font-size: 1rem;
+    }
     .carsol-item{
         margin: 2rem;
     }
@@ -953,7 +983,14 @@ nav span{
 
 @media screen and (min-width: 768px) and (max-width: 865px) {
     
+    .left-nav span{
+        font-size: 1.2rem;
+        color: var(--grey);
+    }
     
+    .left-nav ul a{
+        font-size: 1rem;
+    }
     
     .container1{
         /* position: relative;
@@ -1012,9 +1049,14 @@ nav span{
 
  
 @media screen and (min-width: 630px) and (max-width: 767px) {
-    /* nav ul{
-        display: none;
-    } */
+    .left-nav span{
+        font-size: 1.2rem;
+        color: var(--grey);
+    }
+    
+    .left-nav ul a{
+        font-size: 0.9rem;
+    }
 
     .section1 .heading h2{
         margin-left: 2rem ;
