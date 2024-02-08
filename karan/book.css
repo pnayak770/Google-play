@@ -636,14 +636,14 @@ nav span{
     }
     .section1 .heading h2{
         display: flex;
-        margin-left:  -13rem;
+        margin-left:  2rem;
     }
     .section2 .section-content .section-content2 h2 ,p {
-        margin: 0px -17rem;
+        margin: 0px 2rem;
     }
 
     .section6 .heading h2{
-        margin: 2rem -17rem;
+        margin: 2rem 2rem;
     }
 
     .section2-links {
@@ -655,7 +655,7 @@ nav span{
     }
 
     .heading h2{
-        margin-left: -17rem;
+        margin-left: 2rem;
     }
     .nav-links{
         display: flex;
@@ -677,14 +677,14 @@ nav span{
     }
     .section1 .heading h2{
         display: flex;
-        margin-left:  -13rem;
+        margin-left:  2rem;
     }
     .section2 .section-content .section-content2 h2 ,p {
-        margin: 0px -17rem;
+        margin: 0px 2rem;
     }
 
     .section6 .heading h2{
-        margin: 2rem -17rem;
+        margin: 2rem 2rem;
     }
 
     .section2-links {
@@ -710,11 +710,11 @@ nav span{
 @media screen and (min-width: 1345px) and (max-width: 1454px){
 
     .row{
-        width: 80vw;
+        width: 96vw;
         margin-left: 0rem;
     }
     .nav{
-        width: 63rem;
+        width: 83rem;
     }
     .nav2{
         width: 20vw;
@@ -722,14 +722,14 @@ nav span{
     
     .section1 .heading h2{
         display: flex;
-        margin-left:  -17rem;
+        margin-left:  1rem;
     }
     .section2 .section-content .section-content2 h2 ,p {
-        margin: 0px -17rem;
+        margin: 0px 1rem;
     }
 
     .section6 .heading h2{
-        margin: 2rem -17rem;
+        margin: 2rem 1rem;
     }
 
     .section2-links {
@@ -741,7 +741,7 @@ nav span{
     }
 
     .heading h2{
-        margin-left: -17rem;
+        margin-left: 1;
     }
     .nav-links{
         display: flex;
@@ -755,20 +755,47 @@ nav span{
 
 @media screen and (min-width: 1201px) and (max-width: 1344px){
 
+
+    .container10{
+        display: flex;
+        flex-direction: row;
+        overflow-y: hidden;
+        overflow-x: scroll;
+        width: 90vw;
+    }
+
+    .carsol .carsol-item{
+        margin:0rem 2rem;
+        width: 82rem;
+    }
+
+    .carsol-item{
+        
+        width: 85rem;
+        margin-right: 0;
+    }
+
+    nav{
+        width: 90rem;
+    }
+    .row .carsol-item{
+        width: 100rem;
+        margin-left: 2rem;
+        margin-right: -7rem;
+    }
     .nav2{
         display: inline-block;
     }
-    .carsol-item{
-        margin: 2rem;
-    }
+   
     .section1 .heading h2{
         display: flex;
         margin-left:  1rem;
     }
     .section2 .section-content .section-content2 h2 ,p {
-        margin: 0px -17rem;
+        margin: 0px 1rem;
     }
 
+    
     .section6 .heading h2{
         margin: 2rem 1rem;
     }
@@ -794,6 +821,19 @@ nav span{
 
 @media screen and (min-width: 1000px) and (max-width: 1200px){
 
+    .carsol-item{
+        margin-left: ;
+        width: 68rem;
+        margin-right: 0;
+    }
+    .section4-template{
+        background-color: rgb(41, 173, 255);
+        height: 40vh;
+        margin-left: 4.5rem;
+        margin-top: 3rem;
+        border-radius: 5px;
+        width: 90rem;
+    }
    
     .footer-sub2-a{
         display: flex;
@@ -814,11 +854,11 @@ nav span{
         width: 60rem;
     }
     .nav{
-        width: 59rem;
+        width: 74rem;
     }
-    .carsol-item{
+    .carsol .carsol-item{
         margin:0rem 2rem;
-        width: 56rem;
+        width: 66rem;
     }
     .section1 .heading h2{
         display: flex;
