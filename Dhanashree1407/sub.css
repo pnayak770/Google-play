@@ -90,13 +90,18 @@ nav .left-nav{
   display: flex;
   padding-left: 1rem; 
 }
+a{
+  text-decoration: none;
+  color: rgb(95, 99, 104);
+}
 
 nav ul{
-
+  
   display: flex;
   list-style: none;
 }
 nav ul li{
+  color: rgb(95, 99, 104);
   padding: 1rem;
   font-size: 18px;
 }
@@ -142,10 +147,7 @@ nav span{
   justify-content: center;
   align-items: center;
 }
-a{
-  text-decoration: none;
-  color: black;
-}
+
 a:hover{
   color: rgb(57, 143, 57);
 }
